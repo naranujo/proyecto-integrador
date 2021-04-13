@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- OPEN SANS -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <!-- AQUÍ VA EL FAVICON -->
+        <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+        <!-- TÍTULO DE LA PÁGINA-->
+        <title>Detalle del album - Musify</title>
+    </head>
+    <body>
+        <header>
+            <div class="mobile-menu">
+                <i class="fa fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+                    <li><a href="playlist.html">playlist</a></li>
+                    <li><a href="#">detail <i class="fas fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="detail-track.html">song</a></li>
+                            <li><a href="detail-album.html">album</a></li>
+                            <li><a href="detail-artist.html">artist</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="genres.html">genres</a></li>
+                </ul>
+            </nav>
+            <figure>
+                <a href="index.html"><img src="images/logo/logo-text/1.png"></a>
+            </figure>
+            <form method="GET" action="search-results.html">
+                <input type="text" id="busc" name="search" placeholder="Buscar en musify">
+                <button type="submit" onclick=""><i class="fas fa-search"></i></button>
+            </form>
+        </header>
+        <main>
+        
+            <!-- Grid con tiles que giran 180° y muestran:
+            *LADO-A Foto del álbum
+            *LADO-A Nombre del álbum
+            *LADO-A Nombre del artista
+            *LADO-A "botón vinilo"      **para mostrar el listado de canciones**
+            *LADO-B Genero al que pertenece
+            *LADO-B Fecha de publicación
+            
+            *Debajo o al costado se muestra - *** Listado de canciones del disco *** -->
+
+        </main>
+        <footer>
+            <p>Copyrights ® 2021 | Nicolás Araujo, Matias Calo, Mateo Krikorian</p>
+        </footer>
+        <script src="script/script.js"></script>
+    </body>
+</html>

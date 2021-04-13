@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    max-width: 100vw;
+    margin: auto;
+}
+header{
+    max-width: 100vw;
+    height: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: auto;
+}
+.mobile-menu{
+    margin: auto;
+    color: #191414
+}
+nav{
+    display: none;
+}
+figure{
+    margin: auto;
+}
+figure img{
+    max-height: 40px;
+}
+form{
+    margin: auto;
+    display: flex;
+    background-color: #e7e7e7;
+    border-radius: 25px;
+}
+form input{
+    max-width: 110px;
+    height: 30px;
+    background-color: #e7e7e7;
+    border: none;
+    text-align: center;
+    border-radius: 25px 0 0 25px;
+}
+form input::placeholder{
+    color: #191414;
+}
+form button{
+    height: 30px;
+    border: none;
+    background-color: #e7e7e7;
+    width: 30px;
+    margin: auto;
+    border-radius: 0 25px 25px 0;
+}
+form button i{
+    color: #21bf48;
+}
+main{
+    display: block;
+    margin: auto;
+    justify-content: space-around;
+    max-width: 85vw;
+}
+footer{
+    max-width: 100%;
+    margin: 10px auto 0 auto;
+    height: 60px;
+    text-align: center;
+    padding: 20px;
+    color:#191414;
+    background-color: #e7e7e7;
+}
+
+
+/* DESKTOP TABLET DESKTOP TABLET DESKTOP TABLET DESKTOP TABLET */
+
+@media (min-width:790px){
+    body{
+        max-width: 100vw;
+        margin: auto;
+    }
+    header{
+        align-content: center;
+        height: 60px;
+        margin: 0 0 100px 0;
+    }
+    nav{
+        display: block;
+        margin: auto;
+    }
+    nav ul{
+        display: flex;
+    }
+    nav ul li{
+        margin: 0 30px;
+    }
+    nav ul li a{
+        text-transform: uppercase;
+        color: #5757d5;
+    }    
+    nav ul li ul li{
+        margin: 10px auto;
+        text-align: center;
+    }
+    nav ul ul{
+        display:none;
+    }
+    nav ul li:hover > ul{
+        display: block;
+        position: absolute;
+    }
+    .mobile-menu{
+        display: none;
+    }
+    figure{
+        order:-1;
+    }
+    main{
+        text-align: justify;
+        display: flex;
+    }
+    .flip-box{
+        width: 300px;
+        height: 300px;
+    }
+    footer{
+        padding: 20px;
+    }
+}
