@@ -156,7 +156,59 @@ main h4 {
     width: 80vw;
     height: auto;
 }
-/*DETAIL-TRACK*/
+
+/* DETAIL TRACK */
+main h1 a{
+    color: #21BF42;
+}
+
+.contenedor-principal-detail-track {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-detail-track {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #191414;
+    margin: 10px 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.contenedor-detail-track h5{
+    color:#191414;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor-detail-track h6{
+    color:#21BF42;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor-detail-track h6 a{
+    color:#21BF42;
+}
+
+.contenedor-detail-track img {
+    width: 80vw;
+    height: auto;
+}
+
+.contenedor-detail-track div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor-detail-track div button {
+    border: none;
+    background-color: transparent;
+    font-size: large;
+}
+
+/* DETAIL ALBUM */
 
 
 /* TABLET TABLET TABLET TABLET TABLET TABLET TABLET */
@@ -174,17 +226,25 @@ main h4 {
     justify-content: space-between;
     flex-wrap: wrap;
     }
+
+    .index-artistas img,
     .index-discos img,
     .index-canciones img {
         width: 39vw;
         height: auto;
     }
-    .index-artistas img {
-        width: 39vw;
-        height: 100%;
-    }
     
     /*DETAIL-TRACK*/
+    .contenedor-principal-detail-track {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .contenedor-detail-track img {
+        width: 39vw;
+        height: auto;
+    }
+    /*DETAIL-ALBUM*/
 }
 
 /* DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP */
@@ -239,6 +299,7 @@ main h4 {
     main h4{
         max-width: 120px;
     }
+
     .contenedor-index-artistas,
     .contenedor-index-discos,
     .contenedor-index-canciones {
@@ -246,15 +307,25 @@ main h4 {
     justify-content: space-between;
     flex-wrap: wrap;
     }
+
+    .index-artistas img,
     .index-discos img,
     .index-canciones img {
         width: 25vw;
         height: auto;
     }
-    .index-artistas img {
-        width: 25vw;
-        height: 100%;
-    }
     
     /*DETAIL-TRACK*/
+    .contenedor-principal-detail-track {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .contenedor-detail-track img {
+        width: 25vw;
+        height: auto;
+    }
+    
+    /*DETAIL-ALBUM*/
+
 }
