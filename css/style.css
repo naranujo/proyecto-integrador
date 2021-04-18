@@ -1,133 +1,260 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    max-width: 100vw;
+
+body {
     margin: auto;
 }
-header{
-    max-width: 100vw;
+
+header {
     height: 60px;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+}
+
+.mobile-menu {
+    max-width: 33vw;
+    margin: auto;
+    color: #191414;
+}
+
+nav {
+    display: none; /* no queremos que aparezca en mobile */
+}
+
+figure {
+    max-width: 33vw;
     margin: auto;
 }
-.mobile-menu{
-    margin: auto;
-    color: #191414
-}
-nav{
-    display: none;
-}
-figure{
-    margin: auto;
-}
-figure img{
+
+figure img {
     max-height: 40px;
 }
-form{
+
+form {
+    max-width: 33vw;
     margin: auto;
     display: flex;
     background-color: #e7e7e7;
     border-radius: 25px;
 }
-form input{
-    max-width: 110px;
-    height: 30px;
+
+form input {
+    max-width: 75%;
+    padding: 5px 0;
     background-color: #e7e7e7;
     border: none;
     text-align: center;
     border-radius: 25px 0 0 25px;
 }
-form input::placeholder{
+
+form input::placeholder {
     color: #191414;
+    font-family: Arial, Helvetica, sans-serif;
 }
-form button{
-    height: 30px;
+
+form button {
     border: none;
     background-color: #e7e7e7;
-    width: 30px;
     margin: auto;
     border-radius: 0 25px 25px 0;
 }
-form button i{
+
+form button i {
     color: #21bf48;
 }
-main{
-    display: block;
+
+main {
+    max-width: 80vw;
     margin: auto;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    max-width: 85vw;
 }
-footer{
-    max-width: 100%;
+
+footer {
     margin: 10px auto 0 auto;
-    height: 60px;
     text-align: center;
-    padding: 20px;
-    color:#191414;
+    padding: 15px 0;
+    color: #191414;
     background-color: #e7e7e7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
 }
 
+/* INDEX */
+main h1 {
+    margin: 20px auto;
+    color: #7a7a7a;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-/* DESKTOP TABLET DESKTOP TABLET DESKTOP TABLET DESKTOP TABLET */
+main h4 {
+    max-width: 30vw;
+    background-color: #7a7a7a;
+    border: 1px solid #21BF42;
+    border-radius: 25px;
+    padding: 3px 0;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-@media (min-width:790px){
-    body{
-        max-width: 100vw;
-        margin: auto;
+.contenedor-index-artistas,
+.contenedor-index-discos,
+.contenedor-index-canciones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* si el contenedor se hace, o es, más angosto se "tira" para abajo */
+}
+
+.index-artistas,
+.index-discos,
+.index-canciones {
+    margin: 10px 0;
+}
+
+.index-artistas h5,
+.index-discos h5,
+.index-canciones h5{
+    margin: auto;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.index-artistas h5 a,
+.index-discos h5 a,
+.index-canciones h5 a{
+    color: #21BF42;
+}
+
+.index-artistas h6,
+.index-discos h6,
+.index-canciones h6 {
+    margin: auto;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.index-artistas h6 a,
+.index-discos h6 a,
+.index-canciones h6 a {
+    color: #21BF42;
+}
+
+.index-artistas img,
+.index-discos img,
+.index-canciones img {
+    width: 80vw;
+    height: auto;
+}
+/*DETAIL-TRACK*/
+
+
+/* TABLET TABLET TABLET TABLET TABLET TABLET TABLET */
+
+@media (min-width: 768px){
+    
+    /*INDEX*/
+    main h4{
+        max-width: 120px;
     }
-    header{
-        align-content: center;
-        height: 60px;
-        margin: 0 0 100px 0;
+    .contenedor-index-artistas,
+    .contenedor-index-discos,
+    .contenedor-index-canciones {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     }
-    nav{
+    .index-discos img,
+    .index-canciones img {
+        width: 39vw;
+        height: auto;
+    }
+    .index-artistas img {
+        width: 39vw;
+        height: 100%;
+    }
+    
+    /*DETAIL-TRACK*/
+}
+
+/* DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP */
+
+@media (min-width:1024px) {
+    nav {
         display: block;
         margin: auto;
     }
-    nav ul{
+
+    nav ul {
         display: flex;
     }
-    nav ul li{
+
+    nav ul li {
         margin: 0 30px;
     }
-    nav ul li a{
-        text-transform: uppercase;
+
+    nav ul li a {
+        text-transform: capitalize;
         color: #5757d5;
-    }    
-    nav ul li ul li{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    nav ul li ul li {
         margin: 10px auto;
         text-align: center;
     }
-    nav ul ul{
-        display:none;
+
+    nav ul ul {
+        display: none;
     }
-    nav ul li:hover > ul{
+
+    nav ul li:hover>ul {
         display: block;
         position: absolute;
     }
-    .mobile-menu{
+
+    .mobile-menu {
         display: none;
     }
-    figure{
-        order:-1;
+
+    figure {
+        order: -1;
     }
-    main{
-        text-align: justify;
-        display: flex;
+
+    main h1{
+        margin: 70px 0 20px 0;
     }
-    .flip-box{
-        width: 300px;
-        height: 300px;
+
+    /*INDEX*/
+    main h4{
+        max-width: 120px;
     }
-    footer{
-        padding: 20px;
+    .contenedor-index-artistas,
+    .contenedor-index-discos,
+    .contenedor-index-canciones {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     }
+    .index-discos img,
+    .index-canciones img {
+        width: 25vw;
+        height: auto;
+    }
+    .index-artistas img {
+        width: 25vw;
+        height: 100%;
+    }
+    
+    /*DETAIL-TRACK*/
 }

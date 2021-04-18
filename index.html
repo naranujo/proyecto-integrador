@@ -1,64 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        
-        <!-- OPEN SANS -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-        <!-- AQUÍ VA EL FAVICON -->
-        <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
-        <!-- TÍTULO DE LA PÁGINA-->
-        <title>Musify</title>
-    </head>
-    <body>
-        <header>
-            <div class="mobile-menu">
-                <i class="fa fa-bars"></i>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i></a></li>
-                    <li><a href="playlist.html">playlist</a></li>
-                    <li><a href="#">detail <i class="fas fa-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="detail-track.html">song</a></li>
-                            <li><a href="detail-album.html">album</a></li>
-                            <li><a href="detail-artist.html">artist</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="genres.html">genres</a></li>
-                </ul>
-            </nav>
-            <figure>
-                <a href="index.html"><img src="images/logo/logo-text/1.png"></a>
-            </figure>
-            <form method="GET" action="search-results.html">
-                <input type="text" id="busc" name="search" placeholder="Buscar en musify">
-                <button type="submit" onclick=""><i class="fas fa-search"></i></button>
-            </form>
-        </header>
-        <main>
 
-            <!-- Título de página -->
-            
-            <!-- Globo canciones -->
-            <!-- Carousel - canciones -->
-            
-            <!-- Globo discos -->
-            <!-- Carousel - discos -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- AQUÍ VA EL FAVICON -->
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <!-- TÍTULO DE LA PÁGINA-->
+    <title>Musify</title>
+</head>
 
-            <!-- Globo artistas -->
-            <!-- Carousel - artistas -->
+<body>
+    <header>
+        <div class="mobile-menu">
+            <i class="fa fa-bars"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="playlist.html">playlist</a></li>
+                <li><a href="#">detail <i class="fas fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="detail-track.html">song</a></li>
+                        <li><a href="detail-album.html">album</a></li>
+                        <li><a href="detail-artist.html">artist</a></li>
+                    </ul>
+                </li>
+                <li><a href="genres.html">genres</a></li>
+            </ul>
+        </nav>
+        <figure>
+            <a href="index.html"><img src="images/logo/logo-text/1.png"></a>
+        </figure>
+        <form method="GET" action="search-results.html">
+            <input type="text" id="busc" name="search" placeholder="Buscar...">
+            <button type="submit" onclick=""><i class="fas fa-search"></i></button>
+        </form>
+    </header>
+    <main>
+        <h1>Hola, ¿qué vas a escuchar hoy?</h1>
 
-        </main>
-        <footer>
-            <p>Copyrights ® 2021 | Nicolás Araujo, Matias Calo, Mateo Krikorian</p>
-        </footer>
-        <script src="script/script.js"></script>
-    </body>
+        <!-- Canciones -->
+        <h4>canciones</h4>
+        <section class="contenedor-index-canciones">
+            <article class="index-canciones">
+                <a href="detail-track.html#nenaMaldicion"><img src="images/artists/album/homerun-album.jpg" alt=""></a>
+                <h5>nena maldicion</h5>
+                <h6><a href="#">paulo londra</a></h6>
+            </article>
+            <article class="index-canciones">
+                <a href="detail-track.html#come&Go"><img src="images/artists/album/legends-never-die-album.jpg" alt=""></a>
+                <h5>come & go</h5>
+                <h6><a href="#">juice WRLD</a></h6>
+            </article>
+            <article class="index-canciones">
+                <a href="detail-track.html#ojosColorSol"><img src="images/artists/album/multiviral-album.jpg" alt=""></a>
+                <h5>ojos color sol</h5>
+                <h6><a href="#">calle 13</a></h6>
+            </article>
+            <article class="index-canciones">
+                <a href="detail-track.html#talVez"><img src="images/artists/album/homerun-album.jpg" alt=""></a>
+                <h5>tal vez</h5>
+                <h6><a href="#">paulo londra</a></h6>
+            </article>
+            <article class="index-canciones">
+                <a href="detail-track.html#adanYEva"><img src="images/artists/album/homerun-album.jpg" alt=""></a>
+                <h5>adan y eva</h5>
+                <h6><a href="#">paulo londra</a></h6>
+            </article>
+            <article class="index-canciones">
+                <a href="detail-track.html#wishingWell"><img src="images/artists/album/legends-never-die-album.jpg" alt=""></a>
+                <h5>wishing well</h5>
+                <h6><a href="#">juice WRLD</a></h6>
+            </article>
+            <article class="index-canciones">
+                <a href="detail-track.html#porEsoVine"><img src="images/artists/album/homerun-album.jpg" alt=""></a>
+                <h5>por eso vine</h5>
+                <h6><a href="#">paulo londra</a></h6>
+            </article>
+        </section>
+
+        <!-- Discos -->
+        <h4>discos</h4>
+        <section class="contenedor-index-discos">
+            <article class="index-discos">
+                <a href="#"><img src="images/artists/album/homerun-album.jpg" alt=""></a>
+                <h5><a>homerun</a></h5>
+            </article>
+            <article class="index-discos">
+                <a href="#"><img src="images/artists/album/legends-never-die-album.jpg" alt=""></a>
+                <h5><a>legends never die</a></h5>
+            </article>
+            <article class="index-discos">
+                <a href="#"><img src="images/artists/album/multiviral-album.jpg" alt=""></a>
+                <h5><a>multiviral</a></h5>
+            </article>
+        </section>
+
+        <!-- Artistas -->
+        <h4>artistas</h4>
+        <section class="contenedor-index-artistas">
+            <article class="index-artistas">
+                <a href="#"><img src="images/artists/paulo-londra.jpg" alt=""></a>
+                <h5><a>paulo londra</a></h5>
+            </article>
+            <article class="index-artistas">
+                <a href="#"><img src="images/artists/juice-wrld.jpg" alt=""></a>
+                <h5><a>juice WRLD</a></h5>
+            </article>
+            <article class="index-artistas">
+                <a href="#"><img src="images/artists/calle-13.jpg" alt=""></a>
+                <h5><a>calle 13</a></h5>
+            </article>
+            <article class="index-artistas">
+                <a href="#"><img src="images/artists/elvis-presley.jpg" alt=""></a>
+                <h5><a>elvis presley</a></h5>
+            </article>
+            <article class="index-artistas">
+                <a href="#"><img src="images/artists/pink-floyd.jpg" alt=""></a>
+                <h5><a>pink floyd</a></h5>
+            </article>
+            <article class="index-artistas">
+                <a href="#"><img src="images/artists/dua-lipa.jpg" alt=""></a>
+                <h5><a>dua lipa</a></h5>
+            </article>
+            <article class="index-artistas">
+                <a href="#"><img src="images/artists/artic-monkeys.jpg" alt=""></a>
+                <h5><a>artic monkeys</a></h5>
+            </article>
+            <article class="index-artistas">
+                <a href="#"><img src="images/artists/frank-sinatra.jpg" alt=""></a>
+                <h5><a>frank sinatra</a></h5>
+            </article>
+            <article class="index-artistas">
+                <a href="#"><img src="images/artists/adele.jpg" alt=""></a>
+                <h5><a>adele</a></h5>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Copyrights ® 2021 | Nicolás Araujo, Matias Calo, Mateo Krikorian</p>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+
 </html>
