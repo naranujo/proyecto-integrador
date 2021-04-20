@@ -211,6 +211,33 @@ main h1 a {
     font-size: large;
 }
 
+/* DETAIL ALBUM */
+.album-determinado-titulos {
+    text-align: center;
+    text-transform: capitalize;
+    color: #3a3a3a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.album-determinado-titulos h5 a {
+    color: #21bf42;
+}
+
+.album-determinado-lista {
+    margin: 15px 0;
+    font-size: small;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.album-determinado-lista li a {
+    color: #3a3a3a;
+}
+
+.album-determinado-lista li a i {
+    color: #21BF42;
+}
+
 /* DETAIL ARTIST */
 .contenedor-detail-artist img {
     width: 80vw;
@@ -269,6 +296,36 @@ main h1 a {
     .contenedor-detail-track img {
         width: 39vw;
         height: auto;
+    }
+
+    /*DETAIL-ALBUM*/
+    .album-determinado-foto {
+        display: flex;
+        align-items: center;
+    }
+
+    .album-determinado-foto img {
+        width: 39vw;
+    }
+
+    .contenedor-detail-album {
+        display: flex;
+        justify-content: left;
+        margin: 0 0 20px 0;
+        border-bottom: 1px solid #3a3a3a;
+    }
+
+    .casillero-titulos-listas {
+        margin: 0 0 0 10vw;
+    }
+
+    .album-determinado-titulos {
+        font-size: medium;
+    }
+
+    .album-determinado-lista {
+        font-size: small;
+        text-align: left;
     }
 
     /* DETAIL ARTIST*/
@@ -362,6 +419,31 @@ main h1 a {
     .contenedor-detail-track img {
         width: 25vw;
         height: auto;
+    }
+
+    /*DETAIL-ALBUM*/
+    .contenedor-principal-detail-album {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .album-determinado-foto img {
+        width: 20vw;
+    }
+
+    .contenedor-detail-album {
+        width: 38vw;
+        display: flex;
+        justify-content: left;
+    }
+
+    .album-determinado-lista {
+        text-align: left;
+    }
+
+    .casillero-titulos-listas {
+        margin: 0 0 0 2vw;
     }
 
     /* DETAIL ARTIST */
