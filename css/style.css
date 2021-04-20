@@ -22,7 +22,8 @@ header {
 }
 
 nav {
-    display: none; /* no queremos que aparezca en mobile */
+    display: none;
+    /* no queremos que aparezca en mobile */
 }
 
 figure {
@@ -111,7 +112,8 @@ main h4 {
 .contenedor-index-canciones {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* si el contenedor se hace, o es, más angosto se "tira" para abajo */
+    flex-wrap: wrap;
+    /* si el contenedor se hace, o es, más angosto se "tira" para abajo */
 }
 
 .index-artistas,
@@ -122,7 +124,7 @@ main h4 {
 
 .index-artistas h5,
 .index-discos h5,
-.index-canciones h5{
+.index-canciones h5 {
     margin: auto;
     text-align: center;
     text-transform: capitalize;
@@ -131,7 +133,7 @@ main h4 {
 
 .index-artistas h5 a,
 .index-discos h5 a,
-.index-canciones h5 a{
+.index-canciones h5 a {
     color: #21BF42;
 }
 
@@ -154,11 +156,11 @@ main h4 {
 .index-discos img,
 .index-canciones img {
     width: 80vw;
-    height: auto;
+    height: 210px;
 }
 
 /* DETAIL TRACK */
-main h1 a{
+main h1 a {
     color: #21BF42;
 }
 
@@ -176,21 +178,22 @@ main h1 a{
     text-transform: capitalize;
 }
 
-.contenedor-detail-track h5{
-    color:#191414;
+.contenedor-detail-track h5 {
+    color: #191414;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.contenedor-detail-track h6{
-    color:#21BF42;
+.contenedor-detail-track h6 {
+    color: #21BF42;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.contenedor-detail-track h6 a{
-    color:#21BF42;
+.contenedor-detail-track h6 a {
+    color: #21BF42;
 }
 
-.contenedor-detail-track img {
+.contenedor-detail-track img,
+.album-determinado-foto img {
     width: 80vw;
     height: auto;
 }
@@ -208,43 +211,77 @@ main h1 a{
     font-size: large;
 }
 
-/* DETAIL ALBUM */
+/* DETAIL ARTIST */
+.contenedor-detail-artist img {
+    width: 80vw;
+    height: 210px;
+}
 
+.casillero-detail-artist h5 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: large;
+    color: #21BF42;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-five {
+    margin: 10px 0;
+}
+
+.top-five ul li a {
+    text-transform: capitalize;
+    color: #3a3a3a;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 /* TABLET TABLET TABLET TABLET TABLET TABLET TABLET */
 
-@media (min-width: 768px){
-    
+@media (min-width: 768px) {
+
     /*INDEX*/
-    main h4{
+    main h4 {
         max-width: 120px;
     }
+
     .contenedor-index-artistas,
     .contenedor-index-discos,
     .contenedor-index-canciones {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .index-artistas img,
     .index-discos img,
     .index-canciones img {
         width: 39vw;
-        height: auto;
+        height: 230px;
     }
-    
+
     /*DETAIL-TRACK*/
     .contenedor-principal-detail-track {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
+
     .contenedor-detail-track img {
         width: 39vw;
         height: auto;
     }
-    /*DETAIL-ALBUM*/
+
+    /* DETAIL ARTIST*/
+    .contenedor-principal-detail-artist {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .contenedor-detail-artist img {
+        width: 38vw;
+        height: 230px;
+    }
 }
 
 /* DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP */
@@ -291,41 +328,45 @@ main h1 a{
         order: -1;
     }
 
-    main h1{
+    main h1 {
         margin: 70px 0 20px 0;
     }
 
     /*INDEX*/
-    main h4{
+    main h4 {
         max-width: 120px;
     }
 
     .contenedor-index-artistas,
     .contenedor-index-discos,
     .contenedor-index-canciones {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .index-artistas img,
     .index-discos img,
     .index-canciones img {
         width: 25vw;
-        height: auto;
+        height: 260px;
     }
-    
+
     /*DETAIL-TRACK*/
     .contenedor-principal-detail-track {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
+
     .contenedor-detail-track img {
         width: 25vw;
         height: auto;
     }
-    
-    /*DETAIL-ALBUM*/
 
+    /* DETAIL ARTIST */
+    .contenedor-detail-artist img {
+        width: 25vw;
+        height: 260px;
+    }
 }
