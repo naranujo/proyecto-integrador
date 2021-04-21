@@ -21,6 +21,16 @@ header {
     color: #191414;
 }
 
+nav ul li a:hover {
+    background-color: #21BF42;
+    padding: 10px;
+}
+
+nav ul li a {
+    padding: 10px;
+    color: black;
+}
+
 nav {
     display: none;
     /* no queremos que aparezca en mobile */
@@ -387,7 +397,7 @@ main h1 a {
 
     nav ul li a {
         text-transform: capitalize;
-        color: #5757d5;
+        color: #000000;
         font-family: Arial, Helvetica, sans-serif;
     }
 
