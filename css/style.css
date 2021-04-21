@@ -262,6 +262,29 @@ main h1 a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* GENRES */
+.contenedor-principal-genres {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contenedor-genres {
+    margin: 10px 0;
+}
+
+.contenedor-genres img {
+    max-width: 80vw;
+    height: auto;
+}
+
+.contenedor-genres h5 {
+    margin: auto;
+    text-align: center;
+    color: #191414;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* TABLET TABLET TABLET TABLET TABLET TABLET TABLET */
 
 @media (min-width: 768px) {
@@ -338,6 +361,11 @@ main h1 a {
     .contenedor-detail-artist img {
         width: 38vw;
         height: 230px;
+    }
+
+    /* GENRES */
+    .contenedor-genres img {
+        width: 39vw;
     }
 }
 
@@ -451,43 +479,9 @@ main h1 a {
         width: 25vw;
         height: 260px;
     }
-}
 
-/* MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE*/
-    
-    /* GENRES */
-    .contenedor-principal-genres {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .contenedor-genres {
-        margin: 10px 0;
-    }
-
-    .contenedor-genres img {
-        max-width: 80vw;
-        height: auto;
-    }
-
-    .contenedor-genres h5 {
-        margin: auto;
-        text-align: center;
-        color: #191414;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-/* TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET*/
-    
-    /* GENRES */
-    .contenedor-genres img {
-        width: 39vw;
-    }
-
-/* DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP*/
-    
     /* GENRES */
     .contenedor-genres img {
         width: 24vw;
     }
+}
