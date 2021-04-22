@@ -4,89 +4,78 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-}
-
-body {
+ }
+  
+ body {
     margin: auto;
-}
-
-header {
+ }
+  
+ header {
     height: 60px;
     display: flex;
-}
-
-.mobile-menu {
+ }
+  
+ .mobile-menu {
     max-width: 33vw;
     margin: auto;
     color: #191414;
-}
-
-nav ul li a:hover {
-    background-color: #21BF42;
-    padding: 10px;
-}
-
-nav ul li a {
-    padding: 10px;
-    color: black;
-}
-
-nav {
-    display: none;
-    /* no queremos que aparezca en mobile */
-}
-
-figure {
+ }
+  
+ nav {
+    display: none; /* no queremos que aparezca en mobile */
+ }
+  
+ figure {
     max-width: 33vw;
     margin: auto;
-}
-
-figure img {
+ }
+  
+ figure img {
     max-height: 40px;
-}
-
-form {
+ }
+  
+ form {
     max-width: 33vw;
     margin: auto;
     display: flex;
     background-color: #e7e7e7;
     border-radius: 25px;
-}
-
-form input {
+ }
+  
+ form input {
     max-width: 75%;
     padding: 5px 0;
     background-color: #e7e7e7;
     border: none;
     text-align: center;
     border-radius: 25px 0 0 25px;
-}
-
-form input::placeholder {
+ }
+  
+ form input::placeholder {
     color: #191414;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-form button {
+ }
+  
+ form button {
     border: none;
     background-color: #e7e7e7;
     margin: auto;
     border-radius: 0 25px 25px 0;
-}
-
-form button i {
+ }
+  
+ form button i {
     color: #21bf48;
-}
-
-main {
+ }
+  
+ main {
     max-width: 80vw;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-
-footer {
+ }
+  
+ footer {
     margin: 10px auto 0 auto;
     text-align: center;
     padding: 15px 0;
@@ -94,17 +83,17 @@ footer {
     background-color: #e7e7e7;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
-}
-
-/* INDEX */
-main h1 {
+ }
+  
+ /* INDEX */
+ main h1 {
     margin: 20px auto;
     color: #7a7a7a;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-main h4 {
+ }
+  
+ main h4 {
     max-width: 30vw;
     background-color: #7a7a7a;
     border: 1px solid #21BF42;
@@ -115,383 +104,313 @@ main h4 {
     text-align: center;
     font-size: small;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.contenedor-index-artistas,
-.contenedor-index-discos,
-.contenedor-index-canciones {
+ }
+  
+ .contenedor-index-artistas,
+ .contenedor-index-discos,
+ .contenedor-index-canciones {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    /* si el contenedor se hace, o es, más angosto se "tira" para abajo */
-}
-
-.index-artistas,
-.index-discos,
-.index-canciones {
+    flex-wrap: wrap; /* si el contenedor se hace, o es, más angosto se "tira" para abajo */
+ }
+  
+ .index-artistas,
+ .index-discos,
+ .index-canciones {
     margin: 10px 0;
-}
-
-.index-artistas h5,
-.index-discos h5,
-.index-canciones h5 {
+ }
+  
+ .index-artistas h5,
+ .index-discos h5,
+ .index-canciones h5{
     margin: auto;
     text-align: center;
     text-transform: capitalize;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.index-artistas h5 a,
-.index-discos h5 a,
-.index-canciones h5 a {
+ }
+  
+ .index-artistas h5 a,
+ .index-discos h5 a,
+ .index-canciones h5 a{
     color: #21BF42;
-}
-
-.index-artistas h6,
-.index-discos h6,
-.index-canciones h6 {
+ }
+  
+ .index-artistas h6,
+ .index-discos h6,
+ .index-canciones h6 {
     margin: auto;
     text-align: center;
     text-transform: capitalize;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.index-artistas h6 a,
-.index-discos h6 a,
-.index-canciones h6 a {
+ }
+  
+ .index-artistas h6 a,
+ .index-discos h6 a,
+ .index-canciones h6 a {
     color: #21BF42;
-}
-
-.index-artistas img,
-.index-discos img,
-.index-canciones img {
+ }
+  
+ .index-artistas img,
+ .index-discos img,
+ .index-canciones img {
     width: 80vw;
-    height: 210px;
-}
-
-/* DETAIL TRACK */
-main h1 a {
+    height: auto;
+ }
+  
+ /* DETAIL TRACK */
+ main h1 a{
     color: #21BF42;
-}
-
-.contenedor-principal-detail-track {
+ }
+  
+ .contenedor-principal-detail-track {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-.contenedor-detail-track {
+ }
+  
+ .contenedor-detail-track {
     background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid #191414;
     margin: 10px 0;
     text-align: center;
     text-transform: capitalize;
-}
-
-.contenedor-detail-track h5 {
-    color: #191414;
+ }
+  
+ .contenedor-detail-track h5{
+    color:#191414;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.contenedor-detail-track h6 {
-    color: #21BF42;
+ }
+  
+ .contenedor-detail-track h6{
+    color:#21BF42;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.contenedor-detail-track h6 a {
-    color: #21BF42;
-}
-
-.contenedor-detail-track img,
-.album-determinado-foto img {
+ }
+  
+ .contenedor-detail-track h6 a{
+    color:#21BF42;
+ }
+  
+ .contenedor-detail-track img {
     width: 80vw;
     height: auto;
-}
-
-.contenedor-detail-track div {
+ }
+  
+ .contenedor-detail-track div {
     display: flex;
     justify-content: space-between;
     padding: 0 10px 5px 10px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.contenedor-detail-track div button {
+ }
+  
+ .contenedor-detail-track div button {
     border: none;
     background-color: transparent;
     font-size: large;
-}
-
-/* DETAIL ALBUM */
-.album-determinado-titulos {
-    text-align: center;
-    text-transform: capitalize;
-    color: #3a3a3a;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.album-determinado-titulos h5 a {
-    color: #21bf42;
-}
-
-.album-determinado-lista {
-    margin: 15px 0;
-    font-size: small;
-    text-transform: capitalize;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.album-determinado-lista li a {
-    color: #3a3a3a;
-}
-
-.album-determinado-lista li a i {
-    color: #21BF42;
-}
-
-/* DETAIL ARTIST */
-.contenedor-detail-artist img {
-    width: 80vw;
-    height: 210px;
-}
-
-.casillero-detail-artist h5 {
-    text-align: center;
-    text-transform: capitalize;
-    font-size: large;
-    color: #21BF42;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.top-five {
-    margin: 10px 0;
-}
-
-.top-five ul li a {
-    text-transform: capitalize;
-    color: #3a3a3a;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* GENRES */
-.contenedor-principal-genres {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contenedor-genres {
-    margin: 10px 0;
-}
-
-.contenedor-genres img {
-    max-width: 80vw;
-    height: auto;
-}
-
-.contenedor-genres h5 {
-    margin: auto;
-    text-align: center;
-    color: #191414;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* TABLET TABLET TABLET TABLET TABLET TABLET TABLET */
-
-@media (min-width: 768px) {
-
+ }
+  
+ /* DETAIL ALBUM */
+  
+  
+ /* TABLET TABLET TABLET TABLET TABLET TABLET TABLET */
+  
+ @media (min-width: 768px){
+   
     /*INDEX*/
-    main h4 {
+    main h4{
         max-width: 120px;
     }
-
     .contenedor-index-artistas,
     .contenedor-index-discos,
     .contenedor-index-canciones {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     }
-
+  
     .index-artistas img,
     .index-discos img,
     .index-canciones img {
         width: 39vw;
-        height: 230px;
+        height: auto;
     }
-
+   
     /*DETAIL-TRACK*/
     .contenedor-principal-detail-track {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
-
     .contenedor-detail-track img {
         width: 39vw;
         height: auto;
     }
-
     /*DETAIL-ALBUM*/
-    .album-determinado-foto {
-        display: flex;
-        align-items: center;
-    }
-
-    .album-determinado-foto img {
-        width: 39vw;
-    }
-
-    .contenedor-detail-album {
-        display: flex;
-        justify-content: left;
-        margin: 0 0 20px 0;
-        border-bottom: 1px solid #3a3a3a;
-    }
-
-    .casillero-titulos-listas {
-        margin: 0 0 0 10vw;
-    }
-
-    .album-determinado-titulos {
-        font-size: medium;
-    }
-
-    .album-determinado-lista {
-        font-size: small;
-        text-align: left;
-    }
-
-    /* DETAIL ARTIST*/
-    .contenedor-principal-detail-artist {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .contenedor-detail-artist img {
-        width: 38vw;
-        height: 230px;
-    }
-
-    /* GENRES */
-    .contenedor-genres img {
-        width: 39vw;
-    }
-}
-
-/* DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP */
-
-@media (min-width:1024px) {
+ }
+  
+ /* DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP */
+  
+ @media (min-width:1024px) {
     nav {
         display: block;
         margin: auto;
     }
-
+  
     nav ul {
         display: flex;
     }
-
+  
     nav ul li {
         margin: 0 30px;
     }
-
+  
     nav ul li a {
         text-transform: capitalize;
-        color: #000000;
+        color: #5757d5;
         font-family: Arial, Helvetica, sans-serif;
     }
-
+  
     nav ul li ul li {
         margin: 10px auto;
         text-align: center;
     }
-
+  
     nav ul ul {
         display: none;
     }
-
+  
     nav ul li:hover>ul {
         display: block;
         position: absolute;
     }
-
+  
     .mobile-menu {
         display: none;
     }
-
+  
     figure {
         order: -1;
     }
-
-    main h1 {
+  
+    main h1{
         margin: 70px 0 20px 0;
     }
-
+  
     /*INDEX*/
-    main h4 {
+    main h4{
         max-width: 120px;
     }
-
+  
     .contenedor-index-artistas,
     .contenedor-index-discos,
     .contenedor-index-canciones {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     }
-
+  
     .index-artistas img,
     .index-discos img,
     .index-canciones img {
         width: 25vw;
-        height: 260px;
+        height: auto;
     }
-
+   
     /*DETAIL-TRACK*/
     .contenedor-principal-detail-track {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
-
     .contenedor-detail-track img {
         width: 25vw;
         height: auto;
     }
-
+   
     /*DETAIL-ALBUM*/
-    .contenedor-principal-detail-album {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .album-determinado-foto img {
-        width: 20vw;
-    }
-
-    .contenedor-detail-album {
-        width: 38vw;
-        display: flex;
-        justify-content: left;
-    }
-
-    .album-determinado-lista {
-        text-align: left;
-    }
-
-    .casillero-titulos-listas {
-        margin: 0 0 0 2vw;
-    }
-
-    /* DETAIL ARTIST */
-    .contenedor-detail-artist img {
-        width: 25vw;
-        height: 260px;
-    }
-
-    /* GENRES */
-    .contenedor-genres img {
-        width: 24vw;
-    }
+  
+ }
+  
+ /* PLAYLIST */
+ .contenedor-playlist {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
 }
+.contenedor-playlist img {
+   width: 10vw;
+   border: 5px solid #000000;
+   margin: 10px 10px;
+   height: auto;
+}
+ .contenedor-playlist {
+   background-color: rgba(0, 0, 0, 0.2);
+   border: 1px solid #191414;
+   margin: 20px 100px;
+   text-transform: capitalize;
+}
+ 
+.contenedor-playlist h5{
+   color:#464646;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: left;
+   font-weight: bolder;
+   font-size: 20px;
+}
+ 
+.contenedor-playlist h6{
+   color:#0a0d38;
+   text-outline: 10px  black solid;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bolder;
+   font-size: 16px;
+}
+ 
+.contenedor-playlist h6 a{
+   color:#055a10;
+}
+
+ 
+.contenedor-playlist div {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 10px 5px 10px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+ 
+.contenedor-playlist div button {
+   border: none;
+   background-color: transparent;
+   align-items: baseline;
+   padding: 0 50px;
+   font-size: large;
+}
+
+/*detail-genere*/
+
+/*aca arreglar imagen de portada*/
+/*.contenedor-regueton h2 {
+background-image: url(D:\PROGRAMACION\PROYECTOINTEGRADOR1\images\Genres\REGUETON.png);
+margin: 0;
+min-height: 100vh;
+background-repeat: no-repeat;
+background-size: cover;
+background-position:center;
+background-attachment: fixed;
+}*/
+
+
+
+.contenedor-regueton {
+   background-color: rgba(0, 0, 0, 0.2);
+   border: 1px solid #191414;
+   margin: 20px 100px;
+   text-transform: capitalize;
+}
+
+
+
+
+
+

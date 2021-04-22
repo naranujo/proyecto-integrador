@@ -1,53 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <!-- OPEN SANS -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-        <!-- AQUÍ VA EL FAVICON -->
-        <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
-        <!-- TÍTULO DE LA PÁGINA-->
-        <title>Playlist - Musify</title>
-    </head>
-    <body>
-        <header>
-            <div class="mobile-menu">
-                <i class="fa fa-bars"></i>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i></a></li>
-                    <li><a href="playlist.html">playlist</a></li>
-                    <li><a href="#">detail <i class="fas fa-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="detail-track.html">song</a></li>
-                            <li><a href="detail-album.html">album</a></li>
-                            <li><a href="detail-artist.html">artist</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="genres.html">genres</a></li>
-                </ul>
-            </nav>
-            <figure>
-                <a href="index.html"><img src="images/logo/logo-text/1.png"></a>
-            </figure>
-            <form method="GET" action="search-results.html">
-                <input type="text" id="busc" name="search" placeholder="Buscar en musify">
-                <button type="submit" onclick=""><i class="fas fa-search"></i></button>
-            </form>
-        </header>
-        <main>
-            <!--Igual a detail-track pero con los corazones llenos
-            y ** SOLO con las canciones agregadas por el usuario** -->
-        </main>
-        <footer>
-            <p>Copyrights ® 2021 | Nicolás Araujo, Matias Calo, Mateo Krikorian</p>
-        </footer>
-        <script src="script/script.js"></script>
-    </body>
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="css/style.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <!-- OPEN SANS -->
+       <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+       <!-- AQUÍ VA EL FAVICON -->
+       <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+       <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+       <!-- TÍTULO DE LA PÁGINA-->
+       <title>Playlist - Musify</title>
+   </head>
+   <body> 
+       <header>
+           <div class="mobile-menu">
+               <i class="fa fa-bars"></i>
+           </div>
+           <nav>
+               <ul>
+                   <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+                   <li><a href="playlist.html">playlist</a></li>
+                   <li><a href="#">detail <i class="fas fa-chevron-down"></i></a>
+                       <ul>
+                           <li><a href="detail-track.html">song</a></li>
+                           <li><a href="detail-album.html">album</a></li>
+                           <li><a href="detail-artist.html">artist</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="genres.html">genres</a></li>
+               </ul>
+           </nav>
+           <figure>
+               <a href="index.html"><img src="images/logo/logo-text/1.png"></a>
+           </figure>
+           <form method="GET" action="search-results.html">
+               <input type="text" id="busc" name="search" placeholder="Buscar en musify">
+               <button type="submit" onclick=""><i class="fas fa-search"></i></button>
+           </form>
+       </header>
+       <main>
+           <!--Igual a detail-track pero con los corazones llenos
+           y ** SOLO con las canciones agregadas por el usuario** -->
+       </main>
+       <script src="script/script.js"></script>
+       <!--PAULITO-->
+       <article class="contenedor-playlist" id="adanYEva">
+           <img src="images/artists/album/homerun-album.jpg" alt="">
+           <h5>adan y eva</h5>
+           <h6><a href="#">paulo londra</a></h6>
+           <h6><a href="#">homerun</a></h6>
+           <h6>duracion: 4:16</h6>
+           <div>
+               <button role="button" class="play" id="play"><i class="fa fa-play"></i></button>
+               <button role="button" class="heart" id="heart"><i class="fa fa-heart"></i></button>
+           </div>
+       </article>
+       <!--JUICEWRLD-->
+       <article class="contenedor-playlist" id="wishingWell">
+           <img src="images/artists/album/legends-never-die-album.jpg" alt="">
+           <h5>wishing well</h5>
+           <h6><a href="#">juice WRLD</a></h6>
+           <h6><a href="#">homerun</a></h6>
+           <h6>duracion: 3:14</h6>
+           <div>
+               <button role="button" class="play" id="play"><i class="fa fa-play"></i></button>
+               <button role="button" class="heart" id="heart"><i class="fa fa-heart"></i></button>
+           </div>
+       </article>
+       <!--PAULITO2-->
+       <article class="contenedor-playlist" id="porEsoVine">
+           <img src="images/artists/album/homerun-album.jpg" alt="">
+           <h5>por eso vine</h5>
+           <h6><a href="#">paulo londra</a></h6>
+           <h6><a href="#">homerun</a></h6>
+           <h6>duracion: 2:58</h6>
+           <div>
+               <button role="button" class="play" id="play"><i class="fa fa-play"></i></button>
+               <button role="button" class="heart" id="heart"><i class="fa fa-heart"></i></i></button>
+           </div>
+       </article>
+       <!--CALLE13-->
+       <article class="contenedor-playlist" id="ojosColorSol">
+           <img src="images/artists/album/multiviral-album.jpg" alt="">
+           <h5>ojos color sol</h5>
+           <h6><a href="#">calle 13</a></h6>
+           <h6><a href="#">multiviral</a></h6>
+           <h6>duracion: 3:35</h6>
+           <div>
+               <button role="button" class="play" id="play"><i class="fa fa-play"></i></button>
+               <button role="button" class="heart" id="heart"><i class="fa fa-heart"></i></i></button>
+           </div>
+       </article>
+
+    <article class="contenedor-playlist" id="lucidDreams">
+        <img src="images/artists/juice-wrld/album/goodbye.png" alt="Goodbye & Good Riddance">
+        <h5>lucid dreams</h5>
+        <h6><a href="#">calle 13</a></h6>
+        <h6><a href="#">multiviral</a></h6>
+        <h6>duracion: 3:35</h6>
+        <div>
+            <button role="button" class="play" id="play"><i class="fa fa-play"></i></button>
+            <button role="button" class="heart" id="heart"><i class="fa fa-heart"></i></i></button>
+        </div>
+    </article>
+ 
+
+
+       <footer>
+           <p>Copyrights ® 2021 | Nicolás Araujo, Matias Calo, Mateo Krikorian</p>
+           <br>
+           <p>Contact us: support@musify.com</p>
+       </footer>
+   </body>
 </html>
