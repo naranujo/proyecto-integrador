@@ -396,6 +396,47 @@ main h1 a {
    margin: auto 10px;
 }
 
+/* DETAIL GENRES */
+.portada-detail-genres {
+   display: flex;
+   justify-content: space-between;
+   background-color: rgba(83, 253, 154, 0.2);
+}
+
+.portada-detail-genres h5,
+.portada-detail-genres i {
+   margin: auto;
+   text-transform: capitalize;
+}
+
+.portada-detail-genres img {
+   width: 10vw;
+   height: auto;
+   margin: 10px;
+   border: 1px solid black;
+}
+
+.contenedor-artistas-genres li {
+   display: flex;
+   justify-content: flex-start;
+   margin: 10px 0;
+}
+
+.contenedor-artistas-genres img {
+   width: 25vw;
+   height: 60px;
+}
+
+.contenedor-artistas-genres h5 {
+   margin: auto 0 auto 15vw;
+   flex-wrap: wrap;
+   text-transform: capitalize;
+}
+
+.contenedor-artistas-genres h5 a {
+   color: black;
+}
+
 /* TABLET TABLET TABLET TABLET TABLET TABLET TABLET */
 @media (min-width: 768px) {
 
@@ -506,6 +547,21 @@ main h1 a {
 
    .busqueda-titulos h5 a {
       margin: 0 7vw;
+   }
+
+   /* DETAIL-GENRES */
+   .contenedor-artistas-genres img {
+      width: 10vw;
+      height: 80px;
+   }
+   .contenedor-artistas-genres {
+      max-width: 80vw;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .contenedor-artistas-genres h5 {
+      margin: auto 0 auto 40px;
    }
 }
 
@@ -665,5 +721,19 @@ main h1 a {
    .busqueda-titulos h5 a {
       font-size: large;
       margin: 0 7vw;
+   }
+
+   /* DETAIL-GENRES */
+   .contenedor-artistas-genres {
+      max-width: 80vw;
+   }
+   
+   .contenedor-artistas-genres img {
+      width: 15vw;
+      height: 150px;
+   }
+
+   .contenedor-artistas-genres h5 {
+      margin: auto 0 auto 40px;
    }
 }
