@@ -1,118 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="stylesheet" href="css/style.css">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-       <link rel="preconnect" href="https://fonts.gstatic.com">
-       <!-- OPEN SANS -->
-       <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-       <!-- AQUÍ VA EL FAVICON -->
-       <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-       <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
-       <!-- TÍTULO DE LA PÁGINA-->
-       <title>Playlist - Musify</title>
-   </head>
-   <body> 
-       <header>
-           <div class="mobile-menu">
-               <i class="fa fa-bars"></i>
-           </div>
-           <nav>
-               <ul>
-                   <li><a href="index.html"><i class="fas fa-home"></i></a></li>
-                   <li><a href="playlist.html">playlist</a></li>
-                   <li><a href="#">detail <i class="fas fa-chevron-down"></i></a>
-                       <ul>
-                           <li><a href="detail-track.html">song</a></li>
-                           <li><a href="detail-album.html">album</a></li>
-                           <li><a href="detail-artist.html">artist</a></li>
-                       </ul>
-                   </li>
-                   <li><a href="genres.html">genres</a></li>
-               </ul>
-           </nav>
-           <figure>
-               <a href="index.html"><img src="images/logo/logo-text/1.png"></a>
-           </figure>
-           <form method="GET" action="search-results.html">
-               <input type="text" id="busc" name="search" placeholder="Buscar en musify">
-               <button type="submit" onclick=""><i class="fas fa-search"></i></button>
-           </form>
-       </header>
-       <main>
-           <!--Igual a detail-track pero con los corazones llenos
-           y ** SOLO con las canciones agregadas por el usuario** -->
-       </main>
-       <script src="script/script.js"></script>
-       <!--PAULITO-->
-       <article class="contenedor-playlist" id="adanYEva">
-           <img src="images/artists/album/homerun-album.jpg" alt="">
-           <h5>adan y eva</h5>
-           <h6><a href="#">paulo londra</a></h6>
-           <h6><a href="#">homerun</a></h6>
-           <h6>duracion: 4:16</h6>
-           <div>
-               <button role="button" class="play" id="play"><i class="fa fa-play"></i></button>
-               <button role="button" class="heart" id="heart"><i class="fa fa-heart"></i></button>
-           </div>
-       </article>
-       <!--JUICEWRLD-->
-       <article class="contenedor-playlist" id="wishingWell">
-           <img src="images/artists/album/legends-never-die-album.jpg" alt="">
-           <h5>wishing well</h5>
-           <h6><a href="#">juice WRLD</a></h6>
-           <h6><a href="#">homerun</a></h6>
-           <h6>duracion: 3:14</h6>
-           <div>
-               <button role="button" class="play" id="play"><i class="fa fa-play"></i></button>
-               <button role="button" class="heart" id="heart"><i class="fa fa-heart"></i></button>
-           </div>
-       </article>
-       <!--PAULITO2-->
-       <article class="contenedor-playlist" id="porEsoVine">
-           <img src="images/artists/album/homerun-album.jpg" alt="">
-           <h5>por eso vine</h5>
-           <h6><a href="#">paulo londra</a></h6>
-           <h6><a href="#">homerun</a></h6>
-           <h6>duracion: 2:58</h6>
-           <div>
-               <button role="button" class="play" id="play"><i class="fa fa-play"></i></button>
-               <button role="button" class="heart" id="heart"><i class="fa fa-heart"></i></i></button>
-           </div>
-       </article>
-       <!--CALLE13-->
-       <article class="contenedor-playlist" id="ojosColorSol">
-           <img src="images/artists/album/multiviral-album.jpg" alt="">
-           <h5>ojos color sol</h5>
-           <h6><a href="#">calle 13</a></h6>
-           <h6><a href="#">multiviral</a></h6>
-           <h6>duracion: 3:35</h6>
-           <div>
-               <button role="button" class="play" id="play"><i class="fa fa-play"></i></button>
-               <button role="button" class="heart" id="heart"><i class="fa fa-heart"></i></i></button>
-           </div>
-       </article>
 
-    <article class="contenedor-playlist" id="lucidDreams">
-        <img src="images/artists/juice-wrld/album/goodbye.png" alt="Goodbye & Good Riddance">
-        <h5>lucid dreams</h5>
-        <h6><a href="#">calle 13</a></h6>
-        <h6><a href="#">multiviral</a></h6>
-        <h6>duracion: 3:35</h6>
-        <div>
-            <button role="button" class="play" id="play"><i class="fa fa-play"></i></button>
-            <button role="button" class="heart" id="heart"><i class="fa fa-heart"></i></i></button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- AQUÍ VA EL FAVICON -->
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <!-- TÍTULO DE LA PÁGINA-->
+    <title>Playlist - Musify</title>
+</head>
+
+<body>
+    <header>
+        <div class="mobile-menu">
+            <i class="fa fa-bars"></i>
         </div>
-    </article>
- 
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="playlist.html">playlist</a></li>
+                <li><a href="#">detail <i class="fas fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="detail-track.html">song</a></li>
+                        <li><a href="detail-album.html">album</a></li>
+                        <li><a href="detail-artist.html">artist</a></li>
+                    </ul>
+                </li>
+                <li><a href="genres.html">genres</a></li>
+            </ul>
+        </nav>
+        <figure>
+            <a href="index.html"><img src="images/logo/logo-text/1.png"></a>
+        </figure>
+        <form method="GET" action="search-results.html">
+            <input type="text" id="busc" name="search" placeholder="Buscar...">
+            <button type="submit" onclick=""><i class="fas fa-search"></i></button>
+        </form>
+    </header>
+    <main>
+        <h1>Acá guardamos las canciones que te gustaron</h1>
+        <section class="contenedor-principal-playlist">
+            <article class="contenedor-playlist">
+                <div class="cont-playlist">
+                    <img src="images/artists/paulo-londra/album/homerun.png"
+                        alt="nena maldición - paulo londra - homerun">
+                    <div class="contenedor-titulo">
+                        <h5><a href="">nena maldición</a></h5>
+                        <div class="contenedor-artist">
+                            <h6><a href="">paulo londra</a></h6>
+                            <h6><a>-</a></h6>
+                            <h6><a href="">homerun</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <button role="button" class="heart" id="like"><i class="fa fa-heart"></i></button>
+            </article>
+            <article class="contenedor-playlist">
+                <div class="cont-playlist">
+                    <img src="images/artists/juice-wrld/album/legends-never-die.png"
+                        alt="come & go - juice wrld - legends never die">
+                    <div class="contenedor-titulo">
+                        <h5><a href="">come & go</a></h5>
+                        <div class="contenedor-artist">
+                            <h6><a href="">juice wrld</a></h6>
+                            <h6><a>-</a></h6>
+                            <h6><a href="">legends never die</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <button role="button" class="heart" id="like"><i class="fa fa-heart"></i></button>
+            </article>
+            <article class="contenedor-playlist">
+                <div class="cont-playlist">
+                    <img src="images/artists/calle-13/album/multiviral.png"
+                        alt="ojos color sol - calle 13 - multiviral">
+                    <div class="contenedor-titulo">
+                        <h5><a href="">ojos color solo</a></h5>
+                        <div class="contenedor-artist">
+                            <h6><a href="">calle 13</a></h6>
+                            <h6><a>-</a></h6>
+                            <h6><a href="">multiviral</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <button role="button" class="heart" id="like"><i class="fa fa-heart"></i></button>
+            </article>
+            <article class="contenedor-playlist">
+                <div class="cont-playlist">
+                    <img src="images/artists/fob/album/from-under.png"
+                        alt="dance, dance - fall out boy - from under the cork tree">
+                    <div class="contenedor-titulo">
+                        <h5><a href="">dance, dance</a></h5>
+                        <div class="contenedor-artist">
+                            <h6><a href="">fall out boy</a></h6>
+                            <h6><a>-</a></h6>
+                            <h6><a href="">from under the cork tree</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <button role="button" class="heart" id="like"><i class="fa fa-heart"></i></button>
+            </article>
+            <article class="contenedor-playlist">
+                <div class="cont-playlist">
+                    <img src="images/artists/paulo-londra/album/homerun.png"
+                        alt="por eso vine - paulo londra - homerun">
+                    <div class="contenedor-titulo">
+                        <h5><a href="">por eso vine</a></h5>
+                        <div class="contenedor-artist">
+                            <h6><a href="">paulo londra</a></h6>
+                            <h6><a>-</a></h6>
+                            <h6><a href="">homerun</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <button role="button" class="heart" id="like"><i class="fa fa-heart"></i></button>
+            </article>
+            <article class="contenedor-playlist">
+                <div class="cont-playlist">
+                    <img src="images/artists/mac/album/circle.png" alt="complicated - mac miller - circles">
+                    <div class="contenedor-titulo">
+                        <h5><a href="">complicated</a></h5>
+                        <div class="contenedor-artist">
+                            <h6><a href="">mac miller</a></h6>
+                            <h6><a>-</a></h6>
+                            <h6><a href="">circle</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <button role="button" class="heart" id="like"><i class="fa fa-heart"></i></button>
+            </article>
+            <article class="contenedor-playlist">
+                <div class="cont-playlist">
+                    <img src="images/artists/juice-wrld/album/death-race.png"
+                        alt="demonz - juice wrld - death race for love">
+                    <div class="contenedor-titulo">
+                        <h5><a href="">demonz</a></h5>
+                        <div class="contenedor-artist">
+                            <h6><a href="">juice wrld</a></h6>
+                            <h6><a>-</a></h6>
+                            <h6><a href="">death race for love</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <button role="button" class="heart" id="like"><i class="fa fa-heart"></i></button>
+            </article>
+            <article class="contenedor-playlist">
+                <div class="cont-playlist">
+                    <img src="images/artists/mac/album/swimming.png" alt="perfecto - mac miller - swimming">
+                    <div class="contenedor-titulo">
+                        <h5><a href="">perfecto</a></h5>
+                        <div class="contenedor-artist">
+                            <h6><a href="">mac miller</a></h6>
+                            <h6><a>-</a></h6>
+                            <h6><a href="">swimming</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <button role="button" class="heart" id="like"><i class="fa fa-heart"></i></button>
+            </article>
+            <article class="contenedor-playlist">
+                <div class="cont-playlist">
+                    <img src="images/artists/mac/album/circle.png" alt="self care - mac miller - swimming">
+                    <div class="contenedor-titulo">
+                        <h5><a href="">self care</a></h5>
+                        <div class="contenedor-artist">
+                            <h6><a href="">mac miller</a></h6>
+                            <h6><a>-</a></h6>
+                            <h6><a href="">swimming</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <button role="button" class="heart" id="like"><i class="fa fa-heart"></i></button>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Copyrights ® 2021 | Nicolás Araujo, Matias Calo, Mateo Krikorian</p>
+        <p>Contact us: support@musify.com</p>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
 
-
-       <footer>
-           <p>Copyrights ® 2021 | Nicolás Araujo, Matias Calo, Mateo Krikorian</p>
-           <br>
-           <p>Contact us: support@musify.com</p>
-       </footer>
-   </body>
 </html>

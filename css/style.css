@@ -295,281 +295,335 @@ main h1 a {
    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* TABLET TABLET TABLET TABLET TABLET TABLET TABLET */
+/* PLAYLIST */
+.contenedor-playlist {
+   display: flex;
+   width: 80vw;
+   justify-content: space-between;
+   margin-bottom: 10px;
+}
 
+.cont-playlist {
+   max-width: 70vw;
+   display: flex;
+   overflow: auto;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+}
+
+.contenedor-playlist img {
+   width: auto;
+   height: 60px;
+}
+
+.contenedor-titulo {
+   padding: 10px;
+   text-transform: capitalize;
+}
+
+.contenedor-artist {
+   display: flex;
+   margin: 0 0 0 -5px;
+}
+
+.contenedor-titulo h5 a,
+.contenedor-artist h6 a {
+   color: #3a3a3a;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor-artist h6 a {
+   padding: 5px;
+}
+.contenedor-playlist button {
+   border: none;
+   background-color: transparent;
+   color: #21BF42
+}
+
+/* SEARCH RESULTS */
+.contenedor-busqueda {
+   display: flex;
+}
+
+.contenedor-busqueda img {
+   max-width: 30vw;
+}
+.contenedor-busqueda h5 a{
+   text-transform: capitalize;
+   color: #3a3a3a;
+}
+
+.busqueda-titulos {
+   margin: auto 10px;
+}
+
+/* TABLET TABLET TABLET TABLET TABLET TABLET TABLET */
 @media (min-width: 768px) {
 
    /*INDEX*/
    main h4 {
-       max-width: 120px;
+      max-width: 120px;
    }
 
    .contenedor-index-artistas,
    .contenedor-index-discos,
    .contenedor-index-canciones {
-       display: flex;
-       justify-content: space-between;
-       flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
    }
 
    .index-artistas img,
    .index-discos img,
    .index-canciones img {
-       width: 39vw;
-       height: 230px;
+      width: 39vw;
+      height: 230px;
    }
 
    /*DETAIL-TRACK*/
    .contenedor-principal-detail-track {
-       display: flex;
-       justify-content: space-between;
-       flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
    }
 
    .contenedor-detail-track img {
-       width: 39vw;
-       height: auto;
+      width: 39vw;
+      height: auto;
    }
 
    /*DETAIL-ALBUM*/
    .album-determinado-foto {
-       display: flex;
-       align-items: center;
+      display: flex;
+      align-items: center;
    }
 
    .album-determinado-foto img {
-       width: 39vw;
+      width: 39vw;
    }
 
    .contenedor-detail-album {
-       display: flex;
-       justify-content: left;
-       margin: 0 0 20px 0;
-       border-bottom: 1px solid #3a3a3a;
+      display: flex;
+      justify-content: left;
+      margin: 0 0 20px 0;
+      border-bottom: 1px solid #3a3a3a;
    }
 
    .casillero-titulos-listas {
-       margin: 0 0 0 10vw;
+      margin: 0 0 0 10vw;
    }
 
    .album-determinado-titulos {
-       font-size: medium;
+      font-size: medium;
    }
 
    .album-determinado-lista {
-       font-size: small;
-       text-align: left;
+      font-size: small;
+      text-align: left;
    }
 
    /* DETAIL ARTIST*/
    .contenedor-principal-detail-artist {
-       display: flex;
-       justify-content: space-between;
-       flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
    }
 
    .contenedor-detail-artist img {
-       width: 38vw;
-       height: 230px;
+      width: 38vw;
+      height: 230px;
    }
 
    /* GENRES */
    .contenedor-genres img {
-       width: 39vw;
+      width: 39vw;
+   }
+
+   /* PLAYLIST */
+   .contenedor-playlist {
+      max-width: 38vw;
+      height: auto;
+   }
+   
+   .contenedor-principal-playlist {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+
+   .contenedor-artist {
+      max-width: 70vw;
+   }
+
+   /* SEARCH RESULTS */
+   .contenedor-busqueda img {
+      max-height: 10vw;
+      width: auto;
+   }
+
+   .busqueda-titulos {
+      display: flex;
+   }
+
+   .busqueda-titulos h5 a {
+      margin: 0 7vw;
    }
 }
 
 /* DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP */
-
 @media (min-width:1024px) {
    nav {
-       display: block;
-       margin: auto;
+      display: block;
+      margin: auto;
    }
 
    nav ul {
-       display: flex;
+      display: flex;
    }
 
    nav ul li {
-       margin: 0 30px;
+      margin: 0 30px;
    }
 
    nav ul li a {
-       text-transform: capitalize;
-       color: #000000;
-       font-family: Arial, Helvetica, sans-serif;
+      text-transform: capitalize;
+      color: #5757d5;
+      color: #000000;
+      font-family: Arial, Helvetica, sans-serif;
    }
 
    nav ul li ul li {
-       margin: 10px auto;
-       text-align: center;
+      margin: 10px auto;
+      text-align: center;
    }
 
    nav ul ul {
-       display: none;
+      display: none;
    }
 
    nav ul li:hover>ul {
-       display: block;
-       position: absolute;
+      display: block;
+      position: absolute;
    }
 
    .mobile-menu {
-       display: none;
+      display: none;
    }
 
    figure {
-       order: -1;
+      order: -1;
    }
 
    main h1 {
-       margin: 70px 0 20px 0;
+      margin: 70px 0 20px 0;
    }
 
    /*INDEX*/
    main h4 {
-       max-width: 120px;
+      max-width: 120px;
    }
 
    .contenedor-index-artistas,
    .contenedor-index-discos,
    .contenedor-index-canciones {
-       display: flex;
-       justify-content: space-between;
-       flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
    }
 
    .index-artistas img,
    .index-discos img,
    .index-canciones img {
-       width: 25vw;
-       height: 260px;
+      width: 25vw;
+      height: 260px;
    }
 
    /*DETAIL-TRACK*/
    .contenedor-principal-detail-track {
-       display: flex;
-       justify-content: space-between;
-       flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
    }
 
    .contenedor-detail-track img {
-       width: 25vw;
-       height: auto;
+      width: 25vw;
+      height: auto;
    }
 
    /*DETAIL-ALBUM*/
    .contenedor-principal-detail-album {
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: space-between;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
    }
 
    .album-determinado-foto img {
-       width: 20vw;
+      width: 20vw;
    }
 
    .contenedor-detail-album {
-       width: 38vw;
-       display: flex;
-       justify-content: left;
+      width: 38vw;
+      display: flex;
+      justify-content: left;
    }
 
    .album-determinado-lista {
-       text-align: left;
+      text-align: left;
    }
-   /* PLAYLIST */
- .contenedor-playlist {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex-wrap: wrap;
-}
-.contenedor-playlist img {
-   width: 10vw;
-   border: 5px solid #000000;
-   margin: 10px 10px;
-   height: auto;
-}
- .contenedor-playlist {
-   background-color: rgba(0, 0, 0, 0.2);
-   border: 1px solid #191414;
-   margin: 20px 100px;
-   text-transform: capitalize;
-}
-
-.contenedor-playlist h5{
-   color:#464646;
-   font-family: Arial, Helvetica, sans-serif;
-   text-align: left;
-   font-weight: bolder;
-   font-size: 20px;
-}
-
-.contenedor-playlist h6{
-   color:#0a0d38;
-   text-outline: 10px  black solid;
-   font-family: Arial, Helvetica, sans-serif;
-   font-weight: bolder;
-   font-size: 16px;
-}
-
-.contenedor-playlist h6 a{
-   color:#055a10;
-}
-
-
-.contenedor-playlist div {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 0 10px 5px 10px;
-   font-family: Arial, Helvetica, sans-serif;
-}
-
-.contenedor-playlist div button {
-   border: none;
-   background-color: transparent;
-   align-items: baseline;
-   padding: 0 50px;
-   font-size: large;
-}
-
-/*detail-genere*/
-
-/*aca arreglar imagen de portada*/
-/*.contenedor-regueton h2 {
-background-image: url(D:\PROGRAMACION\PROYECTOINTEGRADOR1\images\Genres\REGUETON.png);
-margin: 0;
-min-height: 100vh;
-background-repeat: no-repeat;
-background-size: cover;
-background-position:center;
-background-attachment: fixed;
-}*/
-
-
-
-.contenedor-regueton {
-   background-color: rgba(0, 0, 0, 0.2);
-   border: 1px solid #191414;
-   margin: 20px 100px;
-   text-transform: capitalize;
-}
 
    .casillero-titulos-listas {
-       margin: 0 0 0 2vw;
+      margin: 0 0 0 2vw;
    }
 
    /* DETAIL ARTIST */
    .contenedor-detail-artist img {
-       width: 25vw;
-       height: 260px;
+      width: 25vw;
+      height: 260px;
    }
 
    /* GENRES */
    .contenedor-genres img {
-       width: 24vw;
+      width: 24vw;
+   }
+
+   /* PLAYLIST */
+   .contenedor-playlist {
+      max-width: 39vw;
+      height: auto;
+   }
+   
+   .contenedor-principal-playlist {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+
+   .contenedor-playlist img {
+      width: auto;
+      height: 100px;
+   }
+
+   .contenedor-titulo {
+      padding: 30px 10px;
+   }
+   
+   .contenedor-artist {
+      margin: 0 0 0 -5px;
+   }
+   
+   .contenedor-titulo h5 a,
+   .contenedor-artist h6 a {
+      font-size: large;
+   }
+   
+   .contenedor-playlist button {
+      font-size: large;
+   }
+
+   /* SEARCH-RESULTS */
+   .busqueda-titulos h5 a {
+      font-size: large;
+      margin: 0 7vw;
    }
 }
