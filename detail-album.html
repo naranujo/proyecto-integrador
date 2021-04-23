@@ -1,703 +1,725 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <!-- OPEN SANS -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-        <!-- AQUÍ VA EL FAVICON -->
-        <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
-        <!-- TÍTULO DE LA PÁGINA-->
-        <title>Detalle del album - Musify</title>
-    </head>
-    <body>
-        <header>
-            <div class="mobile-menu">
-                <i class="fa fa-bars"></i>
-            </div>
-            <nav>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- AQUÍ VA EL FAVICON -->
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <!-- TÍTULO DE LA PÁGINA-->
+    <title>Detalle del album - Musify</title>
+</head>
+
+<body>
+    <header>
+        <div class="mobile-menu">
+            <i class="fa fa-bars"></i>
+            <nav class="mobile-bars">
                 <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i></a></li>
-                    <li><a href="playlist.html">playlist</a></li>
-                    <li><a href="#">detail <i class="fas fa-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="detail-track.html">song</a></li>
-                            <li><a href="detail-album.html">album</a></li>
-                            <li><a href="detail-artist.html">artist</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="detail-track.html">songs</a></li>
+                    <li><a href="detail-album.html">albums</a></li>
+                    <li><a href="detail-artist.html">artist</a></li>
                     <li><a href="genres.html">genres</a></li>
+                    <li><a href="playlist.html">playlist</a></li>
                 </ul>
             </nav>
-            <figure>
-                <a href="index.html"><img src="images/logo/logo-text/1.png"></a>
-            </figure>
-            <form method="GET" action="search-results.html">
-                <input type="text" id="busc" name="search" placeholder="Buscar en musify">
-                <button type="submit" onclick=""><i class="fas fa-search"></i></button>
-            </form>
-        </header>
-        <main>
-            <h1>Álbumes? Acá están! Seguí disfrutando <a href="index.html">Musify</a></h1>
-            <section class="contenedor-principal-detail-album">
-                <article class="contenedor-detail-album" id="homerun">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/paulo-londra/album/homerun.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="playlist.html">playlist</a></li>
+                <li><a href="#">detail <i class="fas fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="detail-track.html">song</a></li>
+                        <li><a href="detail-album.html">album</a></li>
+                        <li><a href="detail-artist.html">artist</a></li>
+                    </ul>
+                </li>
+                <li><a href="genres.html">genres</a></li>
+            </ul>
+        </nav>
+        <figure>
+            <a href="index.html"><img src="images/logo/logo-text/1.png"></a>
+        </figure>
+        <form method="GET" action="search-results.html">
+            <input type="text" id="busc" name="search" placeholder="Buscar...">
+            <button type="submit" onclick=""><i class="fas fa-search"></i></button>
+        </form>
+    </header>
+    <main>
+        <h1>Álbumes? Acá están! Seguí disfrutando <a href="index.html">Musify</a></h1>
+        <section class="contenedor-principal-detail-album">
+            <article class="contenedor-detail-album" id="homerun">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/paulo-londra/album/homerun.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">homerun</a></h5>
+                        <h5><a href="">trap</a></h5>
+                        <h5><a href="">paulo londra</a></h5>
+                        <h6><a>23 de mayo del 2019</a></h6>
                     </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">homerun</a></h5>
-                            <h5><a href="">trap</a></h5>
-                            <h5><a href="">paulo londra</a></h5>
-                            <h6><a>23 de mayo del 2019</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> homerun</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> tal vez</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> no puedo</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> adan y eva</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> demasiado loco</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> maldita abusadora</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> y yo no sé</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> so fresh</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> querido amigo</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> romeo y julieta</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> por eso vine</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> solo pienso en ti</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> forever alone</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> condenado para el millón</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> nena maldición</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> dímelo</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> chica paranormal</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> sigan hablando de mi</a></li>
-                        </ul>
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> homerun</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> tal vez</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> no puedo</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> adan y eva</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> demasiado loco</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> maldita abusadora</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> y yo no sé</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> so fresh</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> querido amigo</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> romeo y julieta</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> por eso vine</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> solo pienso en ti</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> forever alone</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> condenado para el millón</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> nena maldición</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> dímelo</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> chica paranormal</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> sigan hablando de mi</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="death-race">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/juice-wrld/album/death-race.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">death race for love</a></h5>
+                        <h5><a href="">rap</a></h5>
+                        <h5><a href="">juice WRLD</a></h5>
+                        <h6><a>8 de marzo del 2019</a></h6>
                     </div>
-                </article>
-                <article class="contenedor-detail-album" id="death-race">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/juice-wrld/album/death-race.png" alt="">
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> empty</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> maze</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> heMotions</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> demonz</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> fast</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> hear me calling</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> big</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> robbery</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> flaws and sins</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> feeling</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> syphilis</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> who shot cupid</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> ring ring</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> desire</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> out my way</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> the bees knees</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> ON GOD</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> 10 feet</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> won't let go</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> she's the one</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> rider</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> make believe</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="good-for-you">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/amine/album/good-for-you.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">good for you</a></h5>
+                        <h5><a href="">hip hop</a></h5>
+                        <h5><a href="">amine</a></h5>
+                        <h6><a>28 de julio del 2017</a></h6>
                     </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">death race for love</a></h5>
-                            <h5><a href="">rap</a></h5>
-                            <h5><a href="">juice WRLD</a></h5>
-                            <h6><a>8 de marzo del 2019</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> empty</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> maze</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> heMotions</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> demonz</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> fast</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> hear me calling</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> big</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> robbery</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> flaws and sins</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> feeling</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> syphilis</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> who shot cupid</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> ring ring</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> desire</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> out my way</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> the bees knees</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> ON GOD</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> 10 feet</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> won't let go</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> she's the one</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> rider</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> make believe</a></li>
-                        </ul>
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> veggies</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> yellow</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> caroline</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> hero</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> spice girl</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> STFU</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> wedding crashers</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> sundays</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> turf</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> blinds</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> dakota</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> slide</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> money</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> beach boy</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> heebiejaeebies</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="thats-life">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/frank-sinatra/album/thats-life.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">that's life</a></h5>
+                        <h5><a href="">romanticos</a></h5>
+                        <h5><a href="">frank sinatra</a></h5>
+                        <h6><a>noviembre 18 del 1966</a></h6>
                     </div>
-                </article>
-                <article class="contenedor-detail-album" id="good-for-you">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/amine/album/good-for-you.png" alt="">
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> that's life</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> i will wait for you</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> somewhere my love</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> sabd abd sea</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> what now my love</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> winchester cathedral</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> give her love</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> tell her</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> the impossible dream</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> you're gonna hear from me</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="circle">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/mac/album/circle.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">circle</a></h5>
+                        <h5><a href="">rap</a></h5>
+                        <h5><a href="">mac miller</a></h5>
+                        <h6><a>enero 17 del 2020</a></h6>
                     </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">good for you</a></h5>
-                            <h5><a href="">hip hop</a></h5>
-                            <h5><a href="">amine</a></h5>
-                            <h6><a>28 de julio del 2017</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> veggies</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> yellow</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> caroline</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> hero</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> spice girl</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> STFU</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> wedding crashers</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> sundays</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> turf</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> blinds</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> dakota</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> slide</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> money</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> beach boy</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> heebiejaeebies</a></li>
-                        </ul>
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> circles</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> complicated</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> blue world</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> good news</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> i can see</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> everybody</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> woods</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> hand me downs</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> that's on me</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> hands</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> surf</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> once a day</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="limbo">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/amine/album/limbo.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">limbo</a></h5>
+                        <h5><a href="">rap</a></h5>
+                        <h5><a href="">aminé</a></h5>
+                        <h6><a>agosto 7 del 2020</a></h6>
                     </div>
-                </article>
-                <article class="contenedor-detail-album" id="thats-life">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/frank-sinatra/album/thats-life.png" alt="">
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> burden</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> woodlawn</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> kobe</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> roots</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> can't decide</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> compensating</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> shimmy</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> pressure in my palms</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> riri</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> easy</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> mama</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> becky</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> fetus</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> my reality</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="jack-u">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/jack/album/jack-u.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">jack ü</a></h5>
+                        <h5><a href="">electronica</a></h5>
+                        <h5><a href="">jack ü</a></h5>
+                        <h6><a>Febrero 24 del 2015</a></h6>
                     </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">that's life</a></h5>
-                            <h5><a href="">romanticos</a></h5>
-                            <h5><a href="">frank sinatra</a></h5>
-                            <h6><a>noviembre 18 del 1966</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> that's life</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> i will wait for you</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> somewhere my love</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> sabd abd sea</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> what now my love</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> winchester cathedral</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> give her love</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> tell her</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> the impossible dream</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> you're gonna hear from me</a></li>
-                        </ul>
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> don't do drugs just take some jack ü</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> beats knoking</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> take ü dear</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> febreze</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> to ü</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> jungle bae</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> mind</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> holla out</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> where are ü now</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="1point">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/amine/album/one-point-five.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">ONEPOINTFIVE</a></h5>
+                        <h5><a href="">hip hop</a></h5>
+                        <h5><a href="">aminé</a></h5>
+                        <h6><a>Agosto 15 del 2018</a></h6>
                     </div>
-                </article>
-                <article class="contenedor-detail-album" id="circle">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/mac/album/circle.png" alt="">
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> DR. WHOEVER</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> HICCUP</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> REEL IT IN</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> BLACKJACK</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> WHY?</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> SHINE</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> CHINGY</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> DAPPERDAN</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> CANTU</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> SUGARPARENTS</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> STFU 2</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> RATCHET SATURN GIRL</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> TOGETHER</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="psycho">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/fob/album/american-psyco.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">american beauty/ american psycho</a></h5>
+                        <h5><a href="">rock pop</a></h5>
+                        <h5><a href="">fall out boy</a></h5>
+                        <h6><a>Enero 20 del 2015</a></h6>
                     </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">circle</a></h5>
-                            <h5><a href="">rap</a></h5>
-                            <h5><a href="">mac miller</a></h5>
-                            <h6><a>enero 17 del 2020</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> circles</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> complicated</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> blue world</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> good news</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> i can see</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> everybody</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> woods</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> hand me downs</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> that's on me</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> hands</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> surf</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> once a day</a></li>
-                        </ul>
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> irresistible</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> american beauty/ american psycho</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> centuries</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> the kids aren't alright</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> uma thuman</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> jet pack blues</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> novocaine</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> fourth of july</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> favorite record</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> immortals</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> twin skelton's (hotel in NYC)</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="tree">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/fob/album/from-under.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">from under the cork tree</a></h5>
+                        <h5><a href="">rock pop</a></h5>
+                        <h5><a href="">fall out boy</a></h5>
+                        <h6><a>Mayo 3 del 2005</a></h6>
                     </div>
-                </article>
-                <article class="contenedor-detail-album" id="limbo">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/amine/album/limbo.png" alt="">
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> our lawyer made us change the name of this
+                                song so we would't get used</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> of all the gin joins in all the world</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> dance, dance</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> sugar, we're goin down</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> nobody puts baby in the corner</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> i've got a dark alley and a bad idea that says
+                                you should shut your mouth (summer song)</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> 7 minutes inheaven (ataven halen)</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> sophomore slump or comeback of the year</a>
+                        </li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> champagne for my real friends, real pain for
+                                my sham friends</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> i slept with someone in fall out boy and all i
+                                got was this stupid song written about me</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> a little less sixteen candles, a little more
+                                "touch me"</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> get busy living or get busy dying (do your
+                                part to save the scene and stop going to shows)</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> XO</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="infinity">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/fob/album/infinity.png" alt="infinity">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">infity on high</a></h5>
+                        <h5><a href="">rock pop</a></h5>
+                        <h5><a href="">fall out boy</a></h5>
+                        <h6><a>Enero 1 del 2007</a></h6>
                     </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">limbo</a></h5>
-                            <h5><a href="">rap</a></h5>
-                            <h5><a href="">aminé</a></h5>
-                            <h6><a>agosto 7 del 2020</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> burden</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> woodlawn</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> kobe</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> roots</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> can't decide</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> compensating</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> shimmy</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> pressure in my palms</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> riri</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> easy</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> mama</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> becky</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> fetus</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> my reality</a></li>
-                        </ul>
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> thriller</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> "the take over, the breaks over"</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> this ain't a scene, it's an arms race</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> i'm like a lawyer with the way i'm always
+                                trying to get you off (me & you)</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> hum hallelujah</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> golden</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> thanks fr th mmrs</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> don't you know who i think i am?</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> the (after) life of the party</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> the carpal tunnel of love</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> bang the doldrums</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> fame < infamy</a> </li> <li><a href=""><i
+                                            class="fa fa-compact-disc"></i> you're crashing, but you're no wave</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> i've got all this ringing in my ears and none
+                                on my fingers</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> G.I.N.A.S.F.S</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> it's hard to say "i do", when i don't</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> dance, dance - live</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> this ain't a scene, it's an arms race -
+                                live</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> thriller - live</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="summer-days">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/fob/album/summer-days.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">summer days</a></h5>
+                        <h5><a href="">rock pop</a></h5>
+                        <h5><a href="">fall out boy</a></h5>
+                        <h6><a>25 de abril del 2019</a></h6>
                     </div>
-                </article>
-                <article class="contenedor-detail-album" id="jack-u">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/jack/album/jack-u.png" alt="">
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> summer days</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="my-way">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/frank-sinatra/album/my-way.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">my way</a></h5>
+                        <h5><a href="">romanticos</a></h5>
+                        <h5><a href="">frank sinatra</a></h5>
+                        <h6><a>Marzo del 1969</a></h6>
                     </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">jack ü</a></h5>
-                            <h5><a href="">electronica</a></h5>
-                            <h5><a href="">jack ü</a></h5>
-                            <h6><a>Febrero 24 del 2015</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> don't do drugs just take some jack ü</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> beats knoking</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> take ü dear</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> febreze</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> to ü</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> jungle bae</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> mind</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> holla out</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> where are ü now</a></li>
-                        </ul>
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> watch what happens</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> didn't we</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> hallelujah, i love her so</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> yesterday</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> all my tomorrows</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> my way</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> a day in the life of a fool</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> for once in my life</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> if we away</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> mrs. robinson</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="strangers">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/frank-sinatra/album/strangers.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">strangers in the night</a></h5>
+                        <h5><a href="">romanticos</a></h5>
+                        <h5><a href="">frank sinatra</a></h5>
+                        <h6><a>año 1966</a></h6>
                     </div>
-                </article>
-                <article class="contenedor-detail-album" id="1point">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/amine/album/one-point-five.png" alt="">
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> strangers in the night</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> summer wind</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> all or nothing at all</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> call me</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> you're driving me crazy</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> on a clear day</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> my baby just cares for me</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> downtown</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> yes sir, that's my baby</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> the most beautifull girl in the world</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="world">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/frank-sinatra/album/the-world-we-knew.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">the world we knew</a></h5>
+                        <h5><a href="">romanticos</a></h5>
+                        <h5><a href="">frank sinatra</a></h5>
+                        <h6><a>Agosto del 1967</a></h6>
                     </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">ONEPOINTFIVE</a></h5>
-                            <h5><a href="">hip hop</a></h5>
-                            <h5><a href="">aminé</a></h5>
-                            <h6><a>Agosto 15 del 2018</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> DR. WHOEVER</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> HICCUP</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> REEL IT IN</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> BLACKJACK</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> WHY?</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> SHINE</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> CHINGY</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> DAPPERDAN</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> CANTU</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> SUGARPARENTS</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> STFU 2</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> RATCHET SATURN GIRL</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> TOGETHER</a></li>
-                        </ul>
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> the world we knew (over and over)</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> somethin' stupid</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> this is my love</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> born free</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> don't sleep in the subway</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> this town</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> this is my son</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> you are there</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> drinking again</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> some and enchanted evening</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="good-am">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/mac/album/good-am.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">GO:OD AM</a></h5>
+                        <h5><a href="">Rap</a></h5>
+                        <h5><a href="">mac miller</a></h5>
+                        <h6><a>Septiembre 18 del 2015</a></h6>
                     </div>
-                </article>
-                <article class="contenedor-detail-album" id="psycho">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/fob/album/american-psyco.png" alt="">
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> doors</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> brand name</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> rush hour</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> two matches</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> 100 grandkids</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> time files</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> weekend</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> clubhouse</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> in the bang</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> break the law</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> perfect circle / god speed</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> when in rome</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> ROS</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> cut the check</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> ascension</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> jump</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> the festival</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="kids">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/mac/album/kids.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">K.I.D.S</a></h5>
+                        <h5><a href="">Rap</a></h5>
+                        <h5><a href="">mac miller</a></h5>
+                        <h6><a>Agosto 13 del 2010</a></h6>
                     </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">american beauty/ american psycho</a></h5>
-                            <h5><a href="">rock pop</a></h5>
-                            <h5><a href="">fall out boy</a></h5>
-                            <h6><a>Enero 20 del 2015</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> irresistible</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> american beauty/ american psycho</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> centuries</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> the kids aren't alright</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> uma thuman</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> jet pack blues</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> novocaine</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> fourth of july</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> favorite record</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> immortals</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> twin skelton's (hotel in NYC)</a></li>
-                        </ul>
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> kickin' incredibly dope shit</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> outside</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> get em up</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> nikes on my feet</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> the snips</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> don't mind if i do</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> paper route</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> good evening</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> ride around</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> knock knock</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> mad flava, heavy flow (interlude)</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> kool aid & frozen pizza</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> all i want is you</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> poppy</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> face in the crowd</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="swimming">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/mac/album/swimming.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">swimming</a></h5>
+                        <h5><a href="">R&B</a></h5>
+                        <h5><a href="">mac miller</a></h5>
+                        <h6><a>Agosto 3 del 2018</a></h6>
                     </div>
-                </article>
-                <article class="contenedor-detail-album" id="tree">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/fob/album/from-under.png" alt="">
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> come back to earth</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> hurt feeling</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> what's the use?</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> perfecto</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> self care</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> wings</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> ladders</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> small worlds</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> conversation pt.1</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> dunno</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> jet fuel</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> 2009</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> so it goes</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="calle-13">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/calle-13/album/calle-13-album.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">calle 13</a></h5>
+                        <h5><a href="">hip hop</a></h5>
+                        <h5><a href="">calle 13</a></h5>
+                        <h6><a>Noviembre 29 del 2005</a></h6>
                     </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">from under the cork tree</a></h5>
-                            <h5><a href="">rock pop</a></h5>
-                            <h5><a href="">fall out boy</a></h5>
-                            <h6><a>Mayo 3 del 2005</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> our lawyer made us change the name of this song so we would't get used</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> of all the gin joins in all the world</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> dance, dance</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> sugar, we're goin down</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> nobody puts baby in the corner</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> i've got a dark alley and a bad idea that says you should shut your mouth (summer song)</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> 7 minutes inheaven (ataven halen)</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> sophomore slump or comeback of the year</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> champagne for my real friends, real pain for my sham friends</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> i slept with someone in fall out boy and all i got was this stupid song written about me</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> a little less sixteen candles, a little more "touch me"</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> get busy living or get busy dying (do your part to save the scene and stop going to shows)</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> XO</a></li>
-                        </ul>
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> cabe-c-o</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> suave</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> la aguacatona</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> se vale to-to</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> inter-lú-ayala</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> tengo hambre</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> hormiga brava</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> la jirafa</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> intel-lú la comermierda</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> atrévte-te-te</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> pi-di-di</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> vamo animal</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> eléctrico</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> sin coro</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> la tripleta</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> la madre de los enanos</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="entren">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/calle-13/album/entren.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">entren los que quiran </a></h5>
+                        <h5><a href="">hip hop</a></h5>
+                        <h5><a href="">calle 13</a></h5>
+                        <h6><a>Octubre 26 del 2010</a></h6>
                     </div>
-                </article>
-                <article class="contenedor-detail-album" id="infinity">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/fob/album/infinity.png" alt="infinity">
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> calma pueblo</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> baile de los pobres</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> la vuelta la mundo</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> la bala</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> vamo' a portarnos mal</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> latinoamérica</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> digo lo que pienso</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> muerte en hawaii</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> todo se mueve</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> el homrmiguero</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> preparame la cena</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="multiviral">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/calle-13/album/multiviral.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">multiviral</a></h5>
+                        <h5><a href="">hip hop</a></h5>
+                        <h5><a href="">calle 13</a></h5>
+                        <h6><a>Marzo 1 del 2014</a></h6>
                     </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">infity on high</a></h5>
-                            <h5><a href="">rock pop</a></h5>
-                            <h5><a href="">fall out boy</a></h5>
-                            <h6><a>Enero 1 del 2007</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> thriller</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> "the take over, the breaks over"</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> this ain't a scene, it's an arms race</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> i'm like a lawyer with the way i'm always trying to get you off (me & you)</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> hum hallelujah</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> golden</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> thanks fr th mmrs</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> don't you know who i think i am?</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> the (after) life of the party</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> the carpal tunnel of love</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> bang the doldrums</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> fame < infamy</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> you're crashing, but you're no wave</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> i've got all this ringing in my ears and none on my fingers</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> G.I.N.A.S.F.S</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> it's hard to say "i do", when i don't</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> dance, dance - live</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> this ain't a scene, it's an arms race - live</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> thriller - live</a></li>
-                        </ul>
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> respira el momento</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> el aguante</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> ojos color sol</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> multi viral</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> cuando los pies besan el piso</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> adentro</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> los idiotas</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> fuera de la atmosfera del cráneo</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> perseguido</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> gato que avanza, perro que ladra</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> me vieron cruzar</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> así de grandes son las ideas</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="goodbye">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/juice-wrld/album/goodbye.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">goodbye & good riddance</a></h5>
+                        <h5><a href="">rap</a></h5>
+                        <h5><a href="">juice WRLD</a></h5>
+                        <h6><a>Mayo 23 del 2018</a></h6>
                     </div>
-                </article>
-                <article class="contenedor-detail-album" id="summer-days">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/fob/album/summer-days.png" alt="">
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> intro</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> all girls are the same</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> lucid dreams</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> lean wit me</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> i'm still</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> betrayal</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> candles</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> scared of love</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> used to</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> karma</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> hurt me</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> black & white</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> long gone</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> end of the road</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> i'll be fine</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="contenedor-detail-album" id="legends-never-die">
+                <div class="album-determinado-foto">
+                    <img src="images/artists/juice-wrld/album/legends-never-die.png" alt="">
+                </div>
+                <div class="casillero-titulos-listas">
+                    <div class="album-determinado-titulos">
+                        <h5><a href="">legends never die</a></h5>
+                        <h5><a href="">rap</a></h5>
+                        <h5><a href="">juice WORLD</a></h5>
+                        <h6><a>Julio 10 del 2020</a></h6>
                     </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">summer days</a></h5>
-                            <h5><a href="">rock pop</a></h5>
-                            <h5><a href="">fall out boy</a></h5>
-                            <h6><a>25 de abril del 2019</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> summer days</a></li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="contenedor-detail-album" id="my-way">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/frank-sinatra/album/my-way.png" alt="">
-                    </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">my way</a></h5>
-                            <h5><a href="">romanticos</a></h5>
-                            <h5><a href="">frank sinatra</a></h5>
-                            <h6><a>Marzo del 1969</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> watch what happens</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> didn't we</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> hallelujah, i love her so</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> yesterday</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> all my tomorrows</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> my way</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> a day in the life of a fool</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> for once in my life</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> if we away</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> mrs. robinson</a></li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="contenedor-detail-album" id="strangers">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/frank-sinatra/album/strangers.png" alt="">
-                    </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">strangers in the night</a></h5>
-                            <h5><a href="">romanticos</a></h5>
-                            <h5><a href="">frank sinatra</a></h5>
-                            <h6><a>año 1966</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> strangers in the night</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> summer wind</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> all or nothing at all</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> call me</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> you're driving me crazy</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> on a clear day</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> my baby just cares for me</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> downtown</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> yes sir, that's my baby</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> the most beautifull girl in the world</a></li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="contenedor-detail-album" id="world">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/frank-sinatra/album/the-world-we-knew.png" alt="">
-                    </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">the world we knew</a></h5>
-                            <h5><a href="">romanticos</a></h5>
-                            <h5><a href="">frank sinatra</a></h5>
-                            <h6><a>Agosto del 1967</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> the world we knew (over and over)</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> somethin' stupid</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> this is my love</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> born free</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> don't sleep in the subway</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> this town</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> this is my son</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> you are there</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> drinking again</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> some and enchanted evening</a></li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="contenedor-detail-album" id="good-am">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/mac/album/good-am.png" alt="">
-                    </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">GO:OD AM</a></h5>
-                            <h5><a href="">Rap</a></h5>
-                            <h5><a href="">mac miller</a></h5>
-                            <h6><a>Septiembre 18 del 2015</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> doors</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> brand name</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> rush hour</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> two matches</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> 100 grandkids</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> time files</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> weekend</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> clubhouse</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> in the bang</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> break the law</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> perfect circle / god speed</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> when in rome</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> ROS</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> cut the check</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> ascension</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> jump</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> the festival</a></li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="contenedor-detail-album" id="kids">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/mac/album/kids.png" alt="">
-                    </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">K.I.D.S</a></h5>
-                            <h5><a href="">Rap</a></h5>
-                            <h5><a href="">mac miller</a></h5>
-                            <h6><a>Agosto 13 del 2010</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> kickin' incredibly dope shit</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> outside</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> get em up</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> nikes on my feet</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> the snips</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> don't mind if i do</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> paper route</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> good evening</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> ride around</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> knock knock</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> mad flava, heavy flow (interlude)</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> kool aid & frozen pizza</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> all i want is you</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> poppy</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> face in the crowd</a></li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="contenedor-detail-album" id="swimming">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/mac/album/swimming.png" alt="">
-                    </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">swimming</a></h5>
-                            <h5><a href="">R&B</a></h5>
-                            <h5><a href="">mac miller</a></h5>
-                            <h6><a>Agosto 3 del 2018</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> come back to earth</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> hurt feeling</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> what's the use?</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> perfecto</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> self care</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> wings</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> ladders</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> small worlds</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> conversation pt.1</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> dunno</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> jet fuel</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> 2009</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> so it goes</a></li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="contenedor-detail-album" id="calle-13">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/calle-13/album/calle-13-album.png" alt="">
-                    </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">calle 13</a></h5>
-                            <h5><a href="">hip hop</a></h5>
-                            <h5><a href="">calle 13</a></h5>
-                            <h6><a>Noviembre 29 del 2005</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> cabe-c-o</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> suave</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> la aguacatona</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> se vale to-to</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> inter-lú-ayala</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> tengo hambre</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> hormiga brava</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> la jirafa</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> intel-lú la comermierda</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> atrévte-te-te</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> pi-di-di</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> vamo animal</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> eléctrico</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> sin coro</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> la tripleta</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> la madre de los enanos</a></li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="contenedor-detail-album" id="entren">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/calle-13/album/entren.png" alt="">
-                    </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">entren los que quiran </a></h5>
-                            <h5><a href="">hip hop</a></h5>
-                            <h5><a href="">calle 13</a></h5>
-                            <h6><a>Octubre 26 del 2010</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> calma pueblo</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> baile de los pobres</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> la vuelta la mundo</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> la bala</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> vamo' a portarnos mal</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> latinoamérica</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> digo lo que pienso</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> muerte en hawaii</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> todo se mueve</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> el homrmiguero</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> preparame la cena</a></li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="contenedor-detail-album" id="multiviral">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/calle-13/album/multiviral.png" alt="">
-                    </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">multiviral</a></h5>
-                            <h5><a href="">hip hop</a></h5>
-                            <h5><a href="">calle 13</a></h5>
-                            <h6><a>Marzo 1 del 2014</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> respira el momento</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> el aguante</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> ojos color sol</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> multi viral</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> cuando los pies besan el piso</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> adentro</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> los idiotas</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> fuera de la atmosfera del cráneo</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> perseguido</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> gato que avanza, perro que ladra</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> me vieron cruzar</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> así de grandes son las ideas</a></li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="contenedor-detail-album" id="goodbye">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/juice-wrld/album/goodbye.png" alt="">
-                    </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">goodbye & good riddance</a></h5>
-                            <h5><a href="">rap</a></h5>
-                            <h5><a href="">juice WRLD</a></h5>
-                            <h6><a>Mayo 23 del 2018</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> intro</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> all girls are the same</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> lucid dreams</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> lean wit me</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> i'm still</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> betrayal</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> candles</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> scared of love</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> used to</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> karma</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> hurt me</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> black & white</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> long gone</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> end of the road</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> i'll be fine</a></li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="contenedor-detail-album" id="legends-never-die">
-                    <div class="album-determinado-foto">
-                        <img src="images/artists/juice-wrld/album/legends-never-die.png" alt="">
-                    </div>
-                    <div class="casillero-titulos-listas">
-                        <div class="album-determinado-titulos">
-                            <h5><a href="">legends never die</a></h5>
-                            <h5><a href="">rap</a></h5>
-                            <h5><a href="">juice WORLD</a></h5>
-                            <h6><a>Julio 10 del 2020</a></h6>
-                        </div>
-                        <ul class="album-determinado-lista">
-                            <li><a href=""><i class="fa fa-compact-disc"></i> conversations</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> titanic</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> bad energy</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> righteous</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> blood on my jeans</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> smile</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> tell me u luv me</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> hate de otherside</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> life's a mess</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> come & go</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> i want it</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> fighting demons</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> wishing well</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> screw juice</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> up up and away</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> stay high</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> can't died</a></li>
-                            <li><a href=""><i class="fa fa-compact-disc"></i> man of the year</a></li>
-                        </ul>
-                    </div>
-                </article>
-            </section>
-        </main>
-        <footer>
-            <p>Copyrights ® 2021 | Nicolás Araujo, Matias Calo, Mateo Krikorian</p>
-        </footer>
-        <script src="script/script.js"></script>
-    </body>
+                    <ul class="album-determinado-lista">
+                        <li><a href=""><i class="fa fa-compact-disc"></i> conversations</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> titanic</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> bad energy</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> righteous</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> blood on my jeans</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> smile</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> tell me u luv me</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> hate de otherside</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> life's a mess</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> come & go</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> i want it</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> fighting demons</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> wishing well</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> screw juice</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> up up and away</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> stay high</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> can't died</a></li>
+                        <li><a href=""><i class="fa fa-compact-disc"></i> man of the year</a></li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Copyrights ® 2021 | Nicolás Araujo, Matias Calo, Mateo Krikorian</p>
+        <p>Contact us: support@musify.com</p>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+
 </html>

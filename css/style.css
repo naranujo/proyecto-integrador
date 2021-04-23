@@ -16,9 +16,42 @@ header {
 }
 
 .mobile-menu {
-   max-width: 33vw;
-   margin: auto;
+   position: absolute;
+   top: 37px;
+   left: 10vw;
    color: #191414;
+   cursor: pointer;
+}
+
+.mobile-menu:hover>nav {
+   display: block;
+}
+
+.mobile-bars {
+   position: absolute;
+   background-color: blueviolet;
+   left: -10vw;
+   width: 100vw;
+   height: 100vh;
+   padding: 15px 0 0 0;
+}
+
+.mobile-bars li {
+   width: 100vw;
+   margin: 20px 10vw;
+   font-family: Arial, Helvetica, sans-serif;
+   text-transform: uppercase;
+   border-bottom: 2px solid white;
+}
+
+.mobile-bars li a {
+   color: white;
+   font-weight: bold;
+}
+
+.mobile-bars li a:hover {
+   background-color: transparent;
+   color: #21BF42;
 }
 
 nav ul li a:hover {
@@ -37,8 +70,9 @@ nav {
 }
 
 figure {
-   max-width: 33vw;
-   margin: auto;
+   position: absolute;
+   top: 15px;
+   right: 50vw;
 }
 
 figure img {
@@ -46,8 +80,10 @@ figure img {
 }
 
 form {
-   max-width: 33vw;
-   margin: auto;
+   position: absolute;
+   top: 30px;
+   right: 10vw;
+   max-width: 27vw;
    display: flex;
    background-color: #e7e7e7;
    border-radius: 25px;
@@ -335,6 +371,7 @@ main h1 a {
 .contenedor-artist h6 a {
    padding: 5px;
 }
+
 .contenedor-playlist button {
    border: none;
    background-color: transparent;
@@ -349,7 +386,8 @@ main h1 a {
 .contenedor-busqueda img {
    max-width: 30vw;
 }
-.contenedor-busqueda h5 a{
+
+.contenedor-busqueda h5 a {
    text-transform: capitalize;
    color: #3a3a3a;
 }
@@ -445,7 +483,7 @@ main h1 a {
       max-width: 38vw;
       height: auto;
    }
-   
+
    .contenedor-principal-playlist {
       display: flex;
       flex-wrap: wrap;
@@ -475,7 +513,7 @@ main h1 a {
 @media (min-width:1024px) {
    nav {
       display: block;
-      margin: auto;
+      margin: 30px auto;
    }
 
    nav ul {
@@ -512,7 +550,9 @@ main h1 a {
    }
 
    figure {
+      max-width: fit-content;
       order: -1;
+      left: 10vw;
    }
 
    main h1 {
@@ -536,7 +576,7 @@ main h1 a {
    .index-discos img,
    .index-canciones img {
       width: 25vw;
-      height: 260px;
+      height: 280px;
    }
 
    /*DETAIL-TRACK*/
@@ -592,7 +632,7 @@ main h1 a {
       max-width: 39vw;
       height: auto;
    }
-   
+
    .contenedor-principal-playlist {
       display: flex;
       flex-wrap: wrap;
@@ -607,16 +647,16 @@ main h1 a {
    .contenedor-titulo {
       padding: 30px 10px;
    }
-   
+
    .contenedor-artist {
       margin: 0 0 0 -5px;
    }
-   
+
    .contenedor-titulo h5 a,
    .contenedor-artist h6 a {
       font-size: large;
    }
-   
+
    .contenedor-playlist button {
       font-size: large;
    }
