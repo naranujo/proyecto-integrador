@@ -6,6 +6,8 @@
    list-style: none;
 }
 
+
+
 body {
    margin: auto;
 }
@@ -736,4 +738,16 @@ main h1 a {
    .contenedor-artistas-genres h5 {
       margin: auto 0 auto 40px;
    }
+}
+
+.heart:hover {
+   color: aliceblue;
+}
+
+.play:hover{
+   color: aliceblue;
+}
+
+.heartConClick{
+   color: black;
 }
