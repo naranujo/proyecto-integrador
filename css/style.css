@@ -740,7 +740,7 @@ main h1 a {
    }
 }
 
-.heart:hover {
+#heart:hover {
    color: aliceblue;
 }
 
@@ -748,6 +748,7 @@ main h1 a {
    color: aliceblue;
 }
 
-.heartConClick{
-   color: black;
+.ok{
+   color:white;
 }
+
