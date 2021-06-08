@@ -1,31 +1,33 @@
-window.addEventListener('load', function(){
+window.addEventListener('load', function() {
 
 
    // selecciono el elemento que desencadenará la accion
-const clickheart = document.querySelector('#heart')
-
-const clickplay = document.querySelector("#play")
-
-let clickHeWhi = document.querySelector(".heartConClick")
+const clickheart = document.querySelectorAll('.heart')
 
 
-clickheart.addEventListener('click', function () {
-// agrega/quita la clase OK
-clickheart.classList.toggle("ok");
- alert("FUNCIONA")
-    console.log(clickheart);
+const clickplay = document.querySelectorAll(".play")
+
+for (let i = 0; i < clickheart.length; i++) {
+   const element = clickheart[i];
+   console.log(element);
+   element.addEventListener('click', function () {
+      // agrega/quita la clase OK
+    element.classList.toggle("ok");
+       console.log(element);
+    })
+   }
+    
+
+for (let i = 0; i < clickplay.length; i++) {
+   const element = clickplay[i];
+   element.addEventListener('click', function () {
+      // agrega/quita la clase OK
+      element.classList.toggle("ok");
+      if (element.classList.contains("ok")) {
+        //element.classList.toggle("ok");
+      }
+    
+       console.log(element);
+   })
+}
 })
-
-
-clickplay.addEventListener('click', function () {
-  // agrega/quita la clase OK
-clickplay.classList.toggle("ok");
-alert("FUNCIONA")
-   console.log(clickplay);
-})
-
-
-
-
-})
-

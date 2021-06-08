@@ -741,14 +741,22 @@ main h1 a {
 }
 
 #heart:hover {
-   color: aliceblue;
+   color:#1ca038;
+}
+
+#heart:active{
+   color:#19e244;
 }
 
 .play:hover{
-   color: aliceblue;
+   color:#1ca038;
+}
+
+.play:active{
+   color:#19e244;
 }
 
 .ok{
-   color:white;
+   color:#21BF42;
 }
 
