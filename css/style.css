@@ -640,8 +640,7 @@ main h1 a {
    /*DETAIL-TRACK*/
    .contenedor-principal-detail-track {
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      justify-content: center;
    }
 
    .contenedor-detail-track img {
