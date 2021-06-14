@@ -1,5 +1,8 @@
 window.addEventListener('load', function () {
 
+    let palabra = new URLSearchParams(this.location.search)
+    let id = palabra.get('id')
+
     // Declaramos variables globales para insertar info en HTML
 
     let articulo = document.querySelector('main');
@@ -17,12 +20,7 @@ window.addEventListener('load', function () {
     let canciones = []; // Array porque supongo que un album tiene varias
     let idCanciones = []; // Array para almacenar cada ID
 
-    // Necesitamos captar el ID del albúm que se solicitó para mostrar la información requerida
-    // este debería llegar con sessionStorage
-
-    let idAlbumRecuperado = '188385452' //sessionStorage.getItem('idAlbum'); // debería llegar un string
-
-    //fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${idAlbumRecuperado}`)
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
         .then(function (response) {
             return response.json();
         })

@@ -14,5 +14,4 @@ window.addEventListener('load', function () {
             navBotonOpen.style.display = 'block';
         })
     })
-
 })

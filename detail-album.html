@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="nuevostyle.css">   <!--cambiar por style.css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--cambiar por style.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
@@ -20,9 +21,9 @@
         <nav class="mobile-nav" id="mobileNav">
             <button type="button">&times;</button>
             <ul>
-                <li><a href="">inicio</a></li>
-                <li><a href="">géneros</a></li>
-                <li><a href="">playlist</a></li>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="genres.html">géneros</a></li>
+                <li><a href="playlist.html">playlist</a></li>
             </ul>
         </nav>
         <!--logo app-->
@@ -30,14 +31,14 @@
         <!--menú de navegación laptop/desktop-->
         <nav class="desktop-nav" id="desktopNav">
             <ul>
-                <li><a href="">inicio</a></li>
-                <li><a href="">géneros</a></li>
-                <li><a href="">playlist</a></li>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="genres.html">géneros</a></li>
+                <li><a href="playlist.html">playlist</a></li>
             </ul>
         </nav>
         <!--formulario busqueda-->
-        <form action="" method="get">
-            <input type="text" name="" id="" placeholder="Escriba aquí...">
+        <form action="search-results.html" method="GET">
+            <input type="text" name="q" placeholder="Escriba aquí...">
             <button type="submit"><i class="fas fa-search"></i></button>
         </form>
     </header>
@@ -49,8 +50,8 @@
         <p>Contact us: <a href="mailto:support@musify.com">support@musify.com</a></p>
     </footer>
 
-    <script src="js/detail-album.js"></script>
-    <script src="js/menu-nav.js"></script>
+    <script src="script/detail-album.js"></script>
+    <script src="script/nav-mobile.js"></script>
 </body>
 
 </html>

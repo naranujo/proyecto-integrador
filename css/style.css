@@ -6,8 +6,6 @@
    list-style: none;
 }
 
-
-
 body {
    margin: auto;
 }
@@ -261,30 +259,47 @@ main h1 a {
 }
 
 /* DETAIL ALBUM */
-.album-determinado-titulos {
+main article {
+   max-width: 80vw;
+   height: auto;
+   margin: 20px auto;
+   display: flex;
+   flex-direction: column;
+}
+
+main article img {
+   width: 80vw;
+   height: auto;
+}
+
+main article a {
    text-align: center;
-   text-transform: capitalize;
+   color: #21bf48;
+   margin: 5px;
+}
+
+main article p {
+   text-align: center;
    color: #3a3a3a;
-   font-family: Arial, Helvetica, sans-serif;
+   margin: 5px;
 }
 
-.album-determinado-titulos h5 a {
-   color: #21bf42;
+main article ul {
+   list-style: none;
 }
 
-.album-determinado-lista {
-   margin: 15px 0;
-   font-size: small;
-   text-transform: capitalize;
-   font-family: Arial, Helvetica, sans-serif;
+main article ul li {
+   margin: 5px;
 }
 
-.album-determinado-lista li a {
-   color: #3a3a3a;
+main article ul li a {
+   text-decoration: underline;
 }
 
-.album-determinado-lista li a i {
-   color: #21BF42;
+main article ul li::before {
+   content: '\1F3B6';
+   color: #21bf48;
+   margin-right: 10px;
 }
 
 /* DETAIL ARTIST */
@@ -476,33 +491,13 @@ main h1 a {
    }
 
    /*DETAIL-ALBUM*/
-   .album-determinado-foto {
-      display: flex;
-      align-items: center;
+   main article {
+      max-width: 70vw;
    }
 
-   .album-determinado-foto img {
-      width: 39vw;
-   }
-
-   .contenedor-detail-album {
-      display: flex;
-      justify-content: left;
-      margin: 0 0 20px 0;
-      border-bottom: 1px solid #3a3a3a;
-   }
-
-   .casillero-titulos-listas {
-      margin: 0 0 0 10vw;
-   }
-
-   .album-determinado-titulos {
-      font-size: medium;
-   }
-
-   .album-determinado-lista {
-      font-size: small;
-      text-align: left;
+   main article img {
+      width: 50vw;
+      margin: auto;
    }
 
    /* DETAIL ARTIST*/
@@ -557,6 +552,7 @@ main h1 a {
       width: 10vw;
       height: 80px;
    }
+
    .contenedor-artistas-genres {
       max-width: 80vw;
       display: flex;
@@ -729,7 +725,7 @@ main h1 a {
    .contenedor-artistas-genres {
       max-width: 80vw;
    }
-   
+
    .contenedor-artistas-genres img {
       width: 15vw;
       height: 150px;
@@ -741,23 +737,23 @@ main h1 a {
 }
 
 #heart:hover {
-   color:#1ca038;
+   color: #1ca038;
 }
 
-#heart:active{
-   color:#19e244;
+#heart:active {
+   color: #19e244;
 }
 
-.play:hover{
-   color:#1ca038;
+.play:hover {
+   color: #1ca038;
 }
 
-.play:active{
-   color:#19e244;
+.play:active {
+   color: #19e244;
 }
 
-.ok{
-   color:#21BF42;
+.ok {
+   color: #21BF42;
 }
 
 .btn-type-2 {
@@ -770,8 +766,9 @@ main h1 a {
    border-radius: 32px;
    color: #2E7D32;
    transition: 0.2s ease-in-out;
- }
- .btn-type-2:hover {
+}
+
+.btn-type-2:hover {
    border: 2px solid #555;
    color: #555;
- }
+}
