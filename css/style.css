@@ -220,6 +220,7 @@ main h1 a {
 
 .contenedor-detail-track {
    background-color: rgba(0, 0, 0, 0.2);
+   padding: 10px 10px 0px 10px;
    border: 1px solid #191414;
    margin: 10px 0;
    text-align: center;
@@ -759,3 +760,18 @@ main h1 a {
    color:#21BF42;
 }
 
+.btn-type-2 {
+   display: inline-block;
+   padding: 16px 32px 16px 32px;
+   font-family: arial, sans-serif;
+   font-weight: bold;
+   text-decoration: none;
+   border: 2px solid #2E7D32;
+   border-radius: 32px;
+   color: #2E7D32;
+   transition: 0.2s ease-in-out;
+ }
+ .btn-type-2:hover {
+   border: 2px solid #555;
+   color: #555;
+ }
