@@ -13,7 +13,7 @@ let id;
     })
     .then(function (datos) {
         console.log(datos);
-    for (let i = 0; i < datos.data.length; i++) {
+    for (let i = 1; i < datos.data.length; i++) {
         
 img = datos.data[i].picture_medium
 console.log(img);

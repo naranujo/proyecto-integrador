@@ -14,7 +14,7 @@ let preview;
 let id;
 
 
-let imgcua = document.querySelector("section article")
+let imgcua = document.querySelector("section")
 
 
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27/top")
@@ -23,7 +23,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27/top"
 })
 .then(function (datos) {
    console.log(datos);
-for (let index = 0; index < datos.data.length; index--) {
+for (let index = 0; index < datos.data.length; index++) {
   
   url = datos.data[index].link
    console.log(url);
@@ -47,7 +47,8 @@ for (let index = 0; index < datos.data.length; index--) {
    console.log(id);
 
 
-   let inHTML = imgcua.innerHTML = `<h5>${nombre}</h5>
+   let inHTML = imgcua.innerHTML = `<article class="contenedor-detail-track">
+   <h5>${nombre}</h5>
    <h6><a>${artist}</a></h6>
    <h6>${album}</h6>
    <br>
@@ -55,7 +56,8 @@ for (let index = 0; index < datos.data.length; index--) {
    <div>
   <a class="btn-type-2" href="playlist.html">PLAYLIST</a>  
   <button role="button" class="heart" id="heart"><i class="fa fa-heart"></i></button>
-   </div>`
+   </div>
+   </article>`
 
    inHTML[index]
    console.log(inHTML);

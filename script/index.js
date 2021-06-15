@@ -37,7 +37,7 @@ window.addEventListener('load', function () {
                 idCanciones.push(data.tracks.data[i].id)
                 albumes.push(data.tracks.data[i].album.title)
                 idAlbumes.push(data.tracks.data[i].album.id)
-                urlAlbumes.push(data.tracks.data[i].album.cover)
+                urlAlbumes.push(data.tracks.data[i].album.cover_big)
                 artistas.push(data.tracks.data[i].artist.name)
                 idArtistas.push(data.tracks.data[i].artist.id)
                 urlArtistas.push(`https://api.deezer.com/artist/${idArtistas[i]}/image`)
@@ -60,7 +60,7 @@ window.addEventListener('load', function () {
                     `<article class="" id="">
                         <img src="${randomUrlAlbumes[i]}" alt="${randomCanciones[i]}">
                         <a href="detail-track.html?id=${randomIdCanciones[i]}" class="canciones" id="${randomIdCanciones[i]}">${randomCanciones[i]}</a>
-                        <a href="dateil-artist.html?id=${randomIdArtistas[i]}" class="canciones" id="${randomIdArtistas}">${randomArtistas[i]}</a>
+                        <a href="detail-artist.html?id=${randomIdArtistas[i]}" class="canciones" id="${randomIdArtistas}">${randomArtistas[i]}</a>
                     </article>`
 
                 randomAlbumes[i] = albumes[contadorAlbumes];
