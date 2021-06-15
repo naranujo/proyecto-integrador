@@ -54,7 +54,8 @@ for (let index = 0; index < datos.data.length; index++) {
    <br>
    <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${id}" width="100%" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
    <div>
-  <a class="btn-type-2" href="playlist.html">PLAYLIST</a>  
+  <a class"frame" href="playlist.html"<button class="custom-btn btn-13">Playlist</button></a>  
+  
   <button role="button" class="heart" id="heart"><i class="fa fa-heart"></i></button>
    </div>
    </article>`
