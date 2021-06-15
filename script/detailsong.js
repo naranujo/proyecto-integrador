@@ -1,5 +1,8 @@
 window.addEventListener('load', function() {
 
+let palabra = new URLSearchParams (this.location.search)
+let id2 = palabra.get("id")
+
    // selecciono el elemento que desencadenará la accion
 const clickheart = document.querySelectorAll('#heart')
 
@@ -17,33 +20,32 @@ let id;
 let imgcua = document.querySelector("section")
 
 
-fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27/top")
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id2}`)
 .then (function (response) {
    return response.json();
 })
 .then(function (datos) {
    console.log(datos);
-for (let index = 0; index < datos.data.length; index++) {
-  
-  url = datos.data[index].link
+
+  url = datos.link
    console.log(url);
 
-  img = datos.data[index].album.cover_medium
+  img = datos.album.cover_medium
   console.log(img);
 
-   artist = datos.data[index].artist.name
+   artist = datos.artist.name
    console.log(artist);
 
-   album = datos.data[index].album.title
+   album = datos.album.title
    console.log(album);
 
-  cancion = datos.data[index].preview
+  cancion = datos.preview
    console.log(cancion);
 
-  nombre = datos.data[index].title
+  nombre = datos.title
    console.log(nombre);
 
-   id = datos.data[index].id
+   id = datos.id
    console.log(id);
 
 
@@ -55,14 +57,13 @@ for (let index = 0; index < datos.data.length; index++) {
    <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${id}" width="100%" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
    <div>
   <a class"frame" href="playlist.html"<button class="custom-btn btn-13">Playlist</button></a>  
-  
+
   <button role="button" class="heart" id="heart"><i class="fa fa-heart"></i></button>
    </div>
    </article>`
 
    inHTML[index]
    console.log(inHTML);
-}
 })
 .catch (function (error) {
    console.log('El error fue: ' + error);
@@ -81,17 +82,4 @@ for (let i = 0; i < clickheart.length; i++) {
     })
    }
     
-
-for (let i = 0; i < clickplay.length; i++) {
-   const element = clickplay[i];
-   element.addEventListener('click', function () {
-      // agrega/quita la clase OK
-      element.classList.toggle("ok");
-      if (element.classList.contains("ok")) {
-        //element.classList.toggle("ok");
-      }
-    
-       console.log(element);
-   })
-}
 })
