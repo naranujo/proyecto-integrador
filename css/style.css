@@ -481,7 +481,6 @@ main article ul li::before {
    /*DETAIL-TRACK*/
    .contenedor-principal-detail-track {
       display: flex;
-      justify-content: space-between;
       flex-wrap: wrap;
    }
 
@@ -764,30 +763,6 @@ main article ul li::before {
    border: none;
    z-index: 1;
  }
- .btn-13:after {
-   position: absolute;
-   content: "";
-   width: 100%;
-   height: 0;
-   bottom: 0;
-   left: 0;
-   z-index: -1;
-   border-radius: 5px;
-    background-color: #4dccc6;
- background-image: linear-gradient(315deg, #4dcc5e 0%, #a3e496 74%);
-  
-   transition: all 0.3s ease;
- }
- .btn-13:hover {
-   color: #fff;
- }
- .btn-13:hover:after {
-   top: 0;
-   height: 100%;
- }
- .btn-13:active {
-   top: 2px;
- }
 
  .frame {
    width: 90%;
@@ -809,8 +784,6 @@ main article ul li::before {
    font-weight: 500;
    background: transparent;
    cursor: pointer;
-   transition: all 0.3s ease;
-   position: relative;
    display: inline-block;
     box-shadow:
     7px 7px 20px 0px rgba(0,0,0,.1),
