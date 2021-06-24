@@ -3,72 +3,76 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- AQUÍ VA EL FAVICON -->
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <!-- TÍTULO DE LA PÁGINA-->
-    <title>Resultado de busqueda - Musify</title>
+    <title>Resultado de busqueda</title>
 </head>
 
 <body>
     <header>
-        <div class="mobile-menu">
-            <i class="fa fa-bars"></i>
-            <nav class="mobile-bars">
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="detail-track.html">songs</a></li>
-                    <li><a href="detail-album.html">albums</a></li>
-                    <li><a href="detail-artist.html">artist</a></li>
-                    <li><a href="genres.html">genres</a></li>
-                    <li><a href="playlist.html">playlist</a></li>
-                </ul>
-            </nav>
-        </div>
-        <nav>
+        <!--menú de navegación mobile/tablet-->
+        <button class="menu-toggle" type="button">&equiv;</button>
+        <nav class="mobile-nav" id="mobileNav">
+            <button type="button">&times;</button>
             <ul>
-                <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="genres.html">géneros</a></li>
                 <li><a href="playlist.html">playlist</a></li>
-                <li><a href="#">detail <i class="fas fa-chevron-down"></i></a>
-                    <ul>
-                        <li><a href="detail-track.html">song</a></li>
-                        <li><a href="detail-album.html">album</a></li>
-                        <li><a href="detail-artist.html">artist</a></li>
-                    </ul>
-                </li>
-                <li><a href="genres.html">genres</a></li>
             </ul>
         </nav>
-        <figure>
-            <a href="index.html"><img src="images/logo/logo-text/1.png"></a>
-        </figure>
-        <form method="GET" action="search-results.html">
-            <input type="text" id="busc" name="search" placeholder="Buscar...">
-            <button type="submit" onclick=""><i class="fas fa-search"></i></button>
+        <!--logo app-->
+        <a href="index.html"><img src="images/logo/1.png" alt=""></a>
+        <!--menú de navegación laptop/desktop-->
+        <nav class="desktop-nav" id="desktopNav">
+            <ul>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="genres.html">géneros</a></li>
+                <li><a href="playlist.html">playlist</a></li>
+            </ul>
+        </nav>
+        <!--formulario busqueda-->
+        <form action="search-results.html" method="GET">
+            <input type="text" name="q" required="required" minlength="3" placeholder="Escriba aquí...">
+            <button><i class="fas fa-search"></i></button>
         </form>
     </header>
     <main>
-        <h1>Se ha buscado: <a>self care</a></h1>
-        <section class="contenedor-principal-search-results">
-            <article class="contenedor-busqueda">
-                <img src="images/artists/mac/album/swimming.png" alt="self care - mac miller - swimming">
-                <div class="busqueda-titulos">
-                    <h5><a href="detail-track.html#selfCare">self care</a></h5>
-                    <h5><a href="detail-album.html#swimming">swimming</a></h5>
-                    <h5><a href="detail-artist.html#mac-miller">mac miller</a></h5>
-                </div>
-            </article>
+        <section class="sin-resultado">
+            <h1></h1>
+        </section>
+        <section class="loading">
+            <img src="images/logo/loading.gif" alt="loading">
+        </section>
+        <section class="bloque">
+            <h1 class="titulo-resultado-principal">Resultado más relevante para: <span></span></h1>
+            <section class="resultado-principal">
+
+            </section>
+            <h1 class="titulo-resultado-canciones">Canciones llamadas: <span></span></h1>
+            <section class="resultado-canciones">
+
+            </section>
+            <h1 class="titulo-resultado-albumes">Albums llamados: <span></span></h1>
+            <section class="resultado-albumes">
+
+            </section>
+            <h1 class="titulo-resultado-artistas">Artistas llamados: <span></span></h1>
+            <section class="resultado-artistas">
+
+            </section>
         </section>
     </main>
     <footer>
         <p>Copyrights ® 2021 | Nicolás Araujo, Matias Calo, Mateo Krikorian</p>
-        <p>Contact us: support@musify.com</p>
+        <p>Contact us: <a href="mailto:support@musify.com">support@musify.com</a></p>
     </footer>
-    <script src="script/script.js"></script>
+    <script src="script/search-results.js"></script>
+    <script src="script/nav-mobile.js"></script>
 </body>
 
 </html>

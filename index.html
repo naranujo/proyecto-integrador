@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <!--cambiar por style.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
@@ -27,8 +26,8 @@
             </ul>
         </nav>
         <!--logo app-->
-        <a href=""><img src="images/logo/logo-text/1.png" alt=""></a>
-        <!--menú de navegación laptop/desktop-->
+        <a href="index.html"><img src="images/logo/1.png" alt=""></a>
+        <!-- menú de navegación laptop/desktop -->
         <nav class="desktop-nav" id="desktopNav">
             <ul>
                 <li><a href="index.html">inicio</a></li>
@@ -38,7 +37,7 @@
         </nav>
         <!--formulario busqueda-->
         <form action="search-results.html" method="GET">
-            <input type="text" name="q" placeholder="Escriba aquí...">
+            <input type="text" name="q" required="required" minlength="3" placeholder="Escriba aquí...">
             <button type="submit"><i class="fas fa-search"></i></button>
         </form>
     </header>

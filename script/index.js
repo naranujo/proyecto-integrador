@@ -1,6 +1,17 @@
 window.addEventListener('load', function () {
 
-    //  Declaramos variables globales
+    let formulario = document.querySelector('form')
+    let name = document.querySelector('form input')
+
+    formulario.addEventListener('submit', function (e) {
+        e.preventDefault()
+        if (name.value.length > 2) {
+            formulario.submit()
+        } else {
+            alert("El formulario no ha podido ser validado, intente nuevamente ingresando almenos tres caracteres")
+        }
+    })
+
     let seccionCanciones = document.querySelector('#cancionesIndex');
     let seccionAlbumes = document.querySelector('#albumesIndex');
     let seccionArtistas = document.querySelector('#artistasIndex');
@@ -13,6 +24,7 @@ window.addEventListener('load', function () {
     let artistas = [];
     let idArtistas = [];
     let urlArtistas = [];
+
     let randomCanciones = [];
     let randomIdCanciones = [];
     let randomAlbumes = [];
@@ -22,14 +34,16 @@ window.addEventListener('load', function () {
     let randomIdArtistas = [];
     let randomUrlArtistas = [];
 
-    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/playlist/1279119721`) //  top-argentina
+    let contador = []
+    let contadorCanciones = []
+    let contadorAlbumes = []
+    let contadorArtistas = []
 
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/playlist/1279119721`) //  top-argentina
         .then(function (response) {
-            console.log(response)
             return response.json();
         })
         .then(function (data) {
-            console.log(data);
 
             for (let i = 0; i < data.tracks.data.length; i++) {
 
@@ -37,60 +51,102 @@ window.addEventListener('load', function () {
                 idCanciones.push(data.tracks.data[i].id)
                 albumes.push(data.tracks.data[i].album.title)
                 idAlbumes.push(data.tracks.data[i].album.id)
-                urlAlbumes.push(data.tracks.data[i].album.cover_big)
+                urlAlbumes.push(data.tracks.data[i].album.cover_xl)
                 artistas.push(data.tracks.data[i].artist.name)
                 idArtistas.push(data.tracks.data[i].artist.id)
-                urlArtistas.push(`https://api.deezer.com/artist/${idArtistas[i]}/image`)
             }
 
             for (let i = 0; i < 5; i++) {
-                let contadorCanciones = Math.floor(Math.random() * canciones.length)
-                let contadorAlbumes = Math.floor(Math.random() * albumes.length)
-                let contadorArtistas = Math.floor(Math.random() * artistas.length)
+                contador = Math.floor(Math.random() * canciones.length)
+                contadorCanciones.push(contador)
+                for (let j = contadorCanciones.length - 1; j >= 0; j--) {
+                    if (contadorCanciones.indexOf(contadorCanciones[j]) !== j) {
+                        contadorCanciones.splice(j, 1);
+                        i--
+                    }
+                }
+            }
+            console.log(contadorCanciones)
 
-                randomCanciones[i] = canciones[contadorCanciones]
-                randomIdCanciones[i] = idCanciones[contadorCanciones]
+            for (let i = 0; i < 5; i++) {
 
-                randomUrlAlbumes[i] = urlAlbumes[contadorCanciones];
+                randomCanciones[i] = canciones[contadorCanciones[i]]
+                randomIdCanciones[i] = idCanciones[contadorCanciones[i]]
 
-                randomArtistas[i] = artistas[contadorCanciones];
-                randomIdArtistas[i] = idArtistas[contadorCanciones];
+                randomUrlAlbumes[i] = urlAlbumes[contadorCanciones[i]];
+
+                randomArtistas[i] = artistas[contadorCanciones[i]];
+                randomIdArtistas[i] = idArtistas[contadorCanciones[i]];
 
                 seccionCanciones.innerHTML +=
                     `<article class="" id="">
-                        <img src="${randomUrlAlbumes[i]}" alt="${randomCanciones[i]}">
-                        <a href="detail-track.html?id=${randomIdCanciones[i]}" class="canciones" id="${randomIdCanciones[i]}">${randomCanciones[i]}</a>
-                        <a href="detail-artist.html?id=${randomIdArtistas[i]}" class="canciones" id="${randomIdArtistas}">${randomArtistas[i]}</a>
+                        <a href="detail-track.html?id=${randomIdCanciones[i]}"><img src="${randomUrlAlbumes[i]}" alt="${randomCanciones[i]}"></a>
+                        <a href="detail-track.html?id=${randomIdCanciones[i]}" id="${randomIdCanciones[i]}">${randomCanciones[i]}</a>
+                        <a href="detail-artist.html?id=${randomIdArtistas[i]}" id="${randomIdArtistas}">${randomArtistas[i]}</a>
                     </article>`
+            }
 
-                randomAlbumes[i] = albumes[contadorAlbumes];
-                randomIdAlbumes[i] = idAlbumes[contadorAlbumes];
-                randomUrlAlbumes[i] = urlAlbumes[contadorAlbumes];
+            for (let i = 0; i < 5; i++) {
+                contador = Math.floor(Math.random() * albumes.length)
+                contadorAlbumes.push(contador)
+                for (let j = contadorAlbumes.length - 1; j >= 0; j--) {
+                    if (contadorAlbumes.indexOf(contadorAlbumes[j]) !== j) {
+                        contadorAlbumes.splice(j, 1);
+                        i--
+                    }
+                }
+            }
+            console.log(contadorAlbumes)
+
+            for (let i = 0; i < 5; i++) {
+
+
+                randomAlbumes[i] = albumes[contadorAlbumes[i]];
+                randomIdAlbumes[i] = idAlbumes[contadorAlbumes[i]];
+                randomUrlAlbumes[i] = urlAlbumes[contadorAlbumes[i]];
 
                 seccionAlbumes.innerHTML +=
                     `<article class="" id="">
-                        <img src="${randomUrlAlbumes[i]}" alt="${randomAlbumes[i]}">
-                        <a href="detail-album.html?id=${randomIdAlbumes[i]}" class="albumes" id="${randomIdAlbumes[i]}">${randomAlbumes[i]}</a>
+                        <a href="detail-album.html?id=${randomIdAlbumes[i]}"><img src="${randomUrlAlbumes[i]}" alt="${randomAlbumes[i]}"></a>            
+                        <a href="detail-album.html?id=${randomIdAlbumes[i]}" id="${randomIdAlbumes[i]}">${randomAlbumes[i]}</a>
                     </article>`
 
-                randomArtistas[i] = artistas[contadorArtistas];
-                randomIdArtistas[i] = idArtistas[contadorArtistas];
-                randomUrlArtistas[i] = urlArtistas[contadorArtistas];
-
-
-                seccionArtistas.innerHTML +=
-                    `<article class="" id="">
-                        <img src="${randomUrlArtistas[i]}" alt="${randomArtistas[i]}">
-                        <a href="detail-artist.html?id=${randomIdArtistas[i]}" class="artistas" id="${randomIdArtistas[i]}">${randomArtistas[i]}</a>
-                    </article>`
             }
-            /*  función para limpiar repetidos en un array, proximamente...
-
-                for (let i = contador.length - 1; i >= 0; i--) {
-                    if (contador.indexOf(contador[i]) !== i) contador.splice(i, 1);
+            for (let i = 0; i < 5; i++) {
+                contador = Math.floor(Math.random() * artistas.length)
+                contadorArtistas.push(contador)
+                for (let j = contadorArtistas.length - 1; j >= 0; j--) {
+                    if (contadorArtistas.indexOf(contadorArtistas[j]) !== j) {
+                        contadorArtistas.splice(j, 1);
+                        i--
+                    }
                 }
-            */
+            }
+            console.log(contadorArtistas)
 
+            for (let i = 0; i < 5; i++) {
+
+                randomArtistas[i] = artistas[contadorArtistas[i]];
+                randomIdArtistas[i] = idArtistas[contadorArtistas[i]];
+                randomUrlArtistas[i] = urlArtistas[contadorArtistas[i]];
+
+                fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${randomIdArtistas[i]}`)
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .then(function (data) {
+                        let imagen = data.picture_xl
+
+                        seccionArtistas.innerHTML +=
+                            `<article class="" id="">
+                                <a href="detail-artist.html?id=${randomIdArtistas[i]}"><img src="${imagen}" alt="${randomArtistas[i]}"></a>                    
+                                <a href="detail-artist.html?id=${randomIdArtistas[i]}" id="${randomIdArtistas[i]}">${randomArtistas[i]}</a>
+                            </article>`
+                    })
+                    .catch(function (error) {
+                        console.log(`Este es el error del fetch artistas: ${error}`)
+                    })
+            }
         })
         .catch(function (error) {
             console.log(`Este es el error: ${error}`)
