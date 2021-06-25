@@ -4,7 +4,7 @@ window.addEventListener('load', function () {
    let id2 = palabra.get("id")
 
    // selecciono el elemento que desencadenará la accion
-   const clickheart = document.querySelectorAll('#heart')
+   let clickheart;
 
    let url;
    let nombre;
@@ -38,7 +38,7 @@ window.addEventListener('load', function () {
          console.log(id);
 
 
-         let inHTML = imgcua.innerHTML =
+         let inHTML = imgcua.innerHTML +=
             `<article class="contenedor-detail-track">
    <h5>${nombre}</h5>
   
@@ -46,23 +46,74 @@ window.addEventListener('load', function () {
    
    <h6>${album}</h6>
    <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${id}" width="100%" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
-  
    <div>
-  <a class"frame" href="playlist.html"<button class="custom-btn btn-13">Playlist</button></a>  
-  <button role="button" class="heart" id="heart"><i class="fa fa-heart"></i></button>
-  </div>
-
+   <a class = "frame" href="playlist.html"><button class="custom-btn btn-13">Playlist</button></a>  
+   <button role="button" class="heart" id="heart"><i class="fa fa-heart"></i></button>
+   </div>
    </article>`
 
-   console.log(inHTML);
+   clickheart = clickheart.document.querySelector('.heart')
+  
+   console.log(clickheart);
+
+         console.log(inHTML);
 
       })
       .catch(function (error) {
          console.log('El error fue: ' + error);
       })
 
-let idtoStringify = JSON.stringify(id)
+   let favoritos = []
 
-   localStorage.setItem("idCancion", idtoStringify)
+   let recuperoStorage = localStorage.getItem('favoritos')
+
+   if (recuperoStorage != null) {
+      favoritos = JSON.parse(recuperoStorage)
+   }
+
+   if (favoritos.includes(id2)) {
+      clickheart.classList.toggle("ok");
+   }
+
+
+   clickheart.addEventListener('click', function (e) {
+
+      e.preventDefault();
+
+      if (favoritos.includes(id2)) {
+
+         let idS = favoritos.indexOf(id2)
+
+         favoritos.splice(idS, 1)
+
+         clickheart.classList.toggle("ok");
+         alert("FUNCIONA")
+         console.log(clickheart);
+
+         console.log(favoritos);
+
+      } else {
+
+         favoritos.push(id2)
+
+         clickheart
+
+
+         let idtoStringify = JSON.stringify(id)
+
+         localStorage.setItem("idCancion", idtoStringify)
+
+         console.log(localStorage);
+      }
+   })
+
+
+
+   localStorage.getItem
+
+
+
+
+
 
 })
