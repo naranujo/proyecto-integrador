@@ -26,7 +26,7 @@ console.log(id);
         
         
 let inHTML = contgen.innerHTML += `<article class="contenedor-genres">       
-<a href="detail-genres.html#${id}"><img src="${img}" alt="${nombre}"></a>
+<a href="detail-genres.html?=${id}"><img src="${img}" alt="${nombre}"></a>
 <h5>${nombre}</h5>
 </article>`
 console.log(inHTML);
