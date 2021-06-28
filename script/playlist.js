@@ -14,8 +14,11 @@ window.addEventListener('load', function () {
 
     let main = document.querySelector('main')
 
-    let recuperoIdCanciones = localStorage.getItem('')
+    let recuperoIdCanciones = localStorage.getItem('favoritos')
     let idCanciones = JSON.parse(recuperoIdCanciones)
+
+console.log(localStorage);
+console.log(idCanciones);
 
     if (idCanciones == null) {
         main.innerHTML = 'No has agregado canciones a tu playlist'
@@ -32,7 +35,9 @@ window.addEventListener('load', function () {
         for (let i = 0; i < idCanciones.length; i++) {
             fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${idCanciones[i]}`)
                 .then(function (response) {
+                    console.log(response);
                     return response.json()
+                    
                 })
                 .then(function (data) {
                     let cancion = data.title
@@ -41,6 +46,8 @@ window.addEventListener('load', function () {
                     let imagenAlbum = data.album.cover_xl
                     let artista = data.artist.name
                     let idArtista = data.artist.id
+
+                    console.log(cancion);
 
                     main.innerHTML +=
                         `<article>
